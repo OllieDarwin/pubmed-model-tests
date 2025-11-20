@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rel_001",
+    "agent": "Trastuzumab",
+    "pathway": "HER2 signaling",
+    "abstract": "Trastuzumab is a monoclonal antibody that specifically targets the HER2 receptor. By binding to the extracellular domain of HER2, trastuzumab prevents receptor dimerization and inhibits downstream PI3K/AKT and MAPK signaling pathways. In HER2-positive breast cancer cells, treatment with trastuzumab resulted in significant reduction of phosphorylated AKT and ERK1/2, demonstrating effective blockade of HER2-mediated oncogenic signaling.",
+    "gold_label": "relevant",
+    "notes": "Clear mechanistic description of HER2 inhibition"
+  },
+  {
+    "id": "rel_002",
+    "agent": "Vemurafenib",
+    "pathway": "MAPK/ERK pathway",
+    "abstract": "Vemurafenib is a selective BRAF inhibitor approved for treatment of BRAF V600E-mutant melanoma. The drug binds to the ATP-binding site of mutant BRAF kinase, preventing its catalytic activity. Western blot analysis demonstrated that vemurafenib treatment resulted in dose-dependent decrease in phospho-MEK and phospho-ERK levels, confirming inhibition of MAPK pathway signaling in melanoma cell lines harboring BRAF V600E mutation.",
+    "gold_label": "relevant",
+    "notes": "Direct mechanistic evidence of MAPK pathway inhibition"
+  },
+  {
+    "id": "rel_003",
+    "agent": "Pembrolizumab",
+    "pathway": "T cell activation",
+    "abstract": "Pembrolizumab is a humanized monoclonal antibody targeting PD-1 (programmed death receptor-1) on T cells. By blocking the interaction between PD-1 and its ligands PD-L1/PD-L2, pembrolizumab prevents the inhibitory signal that suppresses T cell activation. Flow cytometry analysis showed that pembrolizumab treatment restored T cell proliferation and cytokine production (IFN-γ, TNF-α) in tumor-infiltrating lymphocytes, demonstrating reversal of PD-1-mediated immune suppression.",
+    "gold_label": "relevant",
+    "notes": "Mechanistic description of immune checkpoint blockade"
+  },
+  {
+    "id": "rel_004",
+    "agent": "Imatinib",
+    "pathway": "BCR-ABL signaling",
+    "abstract": "Imatinib mesylate is a tyrosine kinase inhibitor that competitively binds to the ATP-binding pocket of BCR-ABL fusion protein. In chronic myeloid leukemia (CML) cells, imatinib treatment inhibited BCR-ABL autophosphorylation and prevented phosphorylation of downstream substrates including STAT5 and CrkL. This resulted in cell cycle arrest and apoptosis, demonstrating effective blockade of BCR-ABL-driven oncogenic signaling.",
+    "gold_label": "relevant",
+    "notes": "Clear mechanistic link between imatinib and BCR-ABL pathway"
+  },
+  {
+    "id": "rel_005",
+    "agent": "Bevacizumab",
+    "pathway": "VEGF/angiogenesis",
+    "abstract": "Bevacizumab is a recombinant humanized monoclonal antibody that binds to vascular endothelial growth factor A (VEGF-A). By sequestering VEGF-A, bevacizumab prevents its binding to VEGFR-1 and VEGFR-2 receptors on endothelial cells. In tumor xenograft models, bevacizumab treatment reduced microvessel density and inhibited VEGFR2 phosphorylation in tumor-associated vasculature, demonstrating effective blockade of VEGF-mediated angiogenic signaling.",
+    "gold_label": "relevant",
+    "notes": "Mechanistic evidence of VEGF pathway inhibition"
+  },
+  {
+    "id": "rel_006",
+    "agent": "Metformin",
+    "pathway": "HER2 signaling",
+    "abstract": "Metformin is widely used as a first-line treatment for type 2 diabetes mellitus. The drug works primarily by activating AMP-activated protein kinase (AMPK) in hepatocytes, which reduces hepatic glucose production. Clinical studies have shown that metformin therapy improves glycemic control and reduces cardiovascular risk in diabetic patients. The drug is generally well-tolerated with gastrointestinal side effects being most common.",
+    "gold_label": "not_relevant",
+    "notes": "Discusses metformin mechanism but unrelated to HER2 signaling"
+  },
+  {
+    "id": "rel_007",
+    "agent": "Aspirin",
+    "pathway": "MAPK/ERK pathway",
+    "abstract": "Low-dose aspirin has been shown to reduce the risk of cardiovascular events in high-risk patients. A retrospective cohort study of 50,000 patients found that daily aspirin use was associated with 25% reduction in myocardial infarction and stroke incidence over 10-year follow-up. The cardioprotective effects are attributed to irreversible inhibition of platelet cyclooxygenase-1 (COX-1), reducing thromboxane A2 production and platelet aggregation.",
+    "gold_label": "not_relevant",
+    "notes": "Discusses aspirin and COX-1, no mention of MAPK/ERK pathway"
+  },
+  {
+    "id": "rel_008",
+    "agent": "Tamoxifen",
+    "pathway": "Wnt signaling",
+    "abstract": "Tamoxifen is a selective estrogen receptor modulator (SERM) used in treatment and prevention of estrogen receptor-positive breast cancer. The drug acts as an estrogen antagonist in breast tissue by competing with estradiol for binding to estrogen receptors (ER). In a randomized controlled trial involving 2,000 patients, adjuvant tamoxifen therapy reduced breast cancer recurrence by 40% over 5 years. The most common side effects include hot flashes and increased risk of endometrial cancer.",
+    "gold_label": "not_relevant",
+    "notes": "Discusses tamoxifen and ER signaling, not Wnt pathway"
+  },
+  {
+    "id": "rel_009",
+    "agent": "Rituximab",
+    "pathway": "EGFR signaling",
+    "abstract": "Rituximab is a chimeric monoclonal antibody targeting CD20, a surface antigen expressed on B lymphocytes. The drug induces B cell depletion through multiple mechanisms including complement-dependent cytotoxicity (CDC), antibody-dependent cell-mediated cytotoxicity (ADCC), and direct induction of apoptosis. Clinical trials in non-Hodgkin lymphoma patients showed that rituximab combination therapy improved overall survival compared to chemotherapy alone.",
+    "gold_label": "not_relevant",
+    "notes": "Discusses rituximab mechanism against CD20, unrelated to EGFR"
+  },
+  {
+    "id": "rel_010",
+    "agent": "Paclitaxel",
+    "pathway": "JAK-STAT pathway",
+    "abstract": "Paclitaxel is a microtubule-stabilizing agent used in treatment of various solid tumors. The drug binds to β-tubulin subunits and prevents microtubule depolymerization, leading to mitotic arrest and cell death. In vitro studies demonstrated that paclitaxel treatment induces G2/M phase cell cycle arrest and activates the intrinsic apoptotic pathway through cytochrome c release and caspase activation. Neutropenia and peripheral neuropathy are dose-limiting toxicities.",
+    "gold_label": "not_relevant",
+    "notes": "Discusses paclitaxel's mechanism via microtubules, no JAK-STAT involvement"
+  }
+]

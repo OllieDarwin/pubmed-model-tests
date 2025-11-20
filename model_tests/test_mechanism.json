@@ -1,0 +1,57 @@
+[
+  {
+    "id": "mech_001",
+    "agent": "Osimertinib",
+    "pathway": "EGFR signaling",
+    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. Biochemical assays demonstrated that osimertinib treatment abolished phosphorylation of EGFR at Y1068 and Y1173, key autophosporylation sites. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC, leading to inhibition of both RAS/MAPK and PI3K/AKT signaling cascades. In EGFR-mutant non-small cell lung cancer cells, osimertinib treatment resulted in >90% reduction in phospho-ERK and phospho-AKT levels within 2 hours, accompanied by decreased expression of proliferation markers cyclin D1 and c-Myc.",
+    "gold_mechanism": {
+      "summary": "Osimertinib irreversibly inhibits mutant EGFR by covalently binding the ATP-binding site, preventing receptor autophosphorylation and blocking downstream RAS/MAPK and PI3K/AKT signaling",
+      "components": ["EGFR", "cysteine-797", "Y1068", "Y1173", "GRB2", "SHC", "RAS/MAPK", "PI3K/AKT", "ERK", "AKT", "cyclin D1", "c-Myc"],
+      "direction": "inhibition"
+    }
+  },
+  {
+    "id": "mech_002",
+    "agent": "Trametinib",
+    "pathway": "MAPK/ERK pathway",
+    "abstract": "Trametinib is a highly selective allosteric MEK1/2 inhibitor that binds to a pocket adjacent to but not overlapping with the ATP-binding site. Crystal structure analysis revealed that trametinib locks MEK1/2 in a catalytically inactive conformation by stabilizing an α-helix that blocks access of ATP and substrate ERK1/2 to the kinase domain. In BRAF-mutant melanoma cells, trametinib treatment prevented MEK1/2-mediated phosphorylation of ERK1/2 at Thr202/Tyr204, the dual phosphorylation required for ERK activation. Phospho-ERK levels decreased by >95% within 1 hour of trametinib treatment. Consequently, ERK-dependent transcription factors including ELK1 and c-FOS showed reduced phosphorylation and transcriptional activity, leading to decreased expression of proliferation-associated genes such as CCND1 and MYC. This resulted in G1 cell cycle arrest and reduced tumor cell proliferation.",
+    "gold_mechanism": {
+      "summary": "Trametinib allosterically inhibits MEK1/2 by stabilizing an inactive conformation, preventing ERK1/2 phosphorylation and downstream transcriptional activation of proliferation genes",
+      "components": ["MEK1", "MEK2", "ERK1", "ERK2", "Thr202", "Tyr204", "ELK1", "c-FOS", "CCND1", "MYC"],
+      "direction": "inhibition"
+    }
+  },
+  {
+    "id": "mech_003",
+    "agent": "Idelalisib",
+    "pathway": "PI3K/AKT pathway",
+    "abstract": "Idelalisib is a first-in-class selective inhibitor of the delta isoform of phosphoinositide 3-kinase (PI3Kδ), which is predominantly expressed in hematopoietic cells. The drug competes with ATP for binding to the catalytic domain of PI3Kδ (p110δ subunit). Inhibition of PI3Kδ prevents phosphorylation of phosphatidylinositol-4,5-bisphosphate (PIP2) to generate phosphatidylinositol-3,4,5-trisphosphate (PIP3), the critical lipid second messenger that recruits AKT to the plasma membrane. In chronic lymphocytic leukemia (CLL) cells, idelalisib treatment reduced membrane PIP3 levels by 80% and decreased phosphorylation of AKT at both Thr308 (PDK1 site) and Ser473 (mTORC2 site). Reduced AKT activity led to decreased phosphorylation of downstream substrates including FOXO transcription factors, GSK3β, and MDM2. This resulted in cell cycle arrest, reduced survival signaling, and increased apoptosis in malignant B cells.",
+    "gold_mechanism": {
+      "summary": "Idelalisib selectively inhibits PI3Kδ, preventing PIP3 generation and AKT membrane recruitment/activation, leading to reduced phosphorylation of pro-survival downstream targets",
+      "components": ["PI3Kδ", "p110δ", "PIP2", "PIP3", "AKT", "Thr308", "Ser473", "PDK1", "mTORC2", "FOXO", "GSK3β", "MDM2"],
+      "direction": "inhibition"
+    }
+  },
+  {
+    "id": "mech_004",
+    "agent": "Ruxolitinib",
+    "pathway": "JAK-STAT pathway",
+    "abstract": "Ruxolitinib is a JAK1/JAK2 inhibitor approved for treatment of myeloproliferative neoplasms. The drug competitively binds to the ATP-binding pocket of JAK1 and JAK2 kinases, preventing their catalytic activity. In myelofibrosis patient samples harboring JAK2 V617F mutation, ruxolitinib treatment blocked constitutive JAK2 autophosphorylation at Y1007/Y1008 activation loop residues. This prevented JAK2-mediated phosphorylation of tyrosine residues on cytokine receptors such as erythropoietin receptor (EPOR) and thrombopoietin receptor (MPL). Consequently, STAT3 and STAT5 proteins could not dock to phospho-tyrosine residues via their SH2 domains, preventing their JAK-mediated phosphorylation at Y705 (STAT3) and Y694 (STAT5). Unphosphorylated STATs remained in the cytoplasm and could not dimerize, translocate to the nucleus, or activate transcription of target genes including MYC, BCL2, and PIM1. This led to reduced proliferation and increased apoptosis of JAK2-mutant cells.",
+    "gold_mechanism": {
+      "summary": "Ruxolitinib inhibits JAK1/2 kinase activity, preventing receptor and STAT phosphorylation, which blocks STAT dimerization, nuclear translocation, and transcriptional activation of proliferation/survival genes",
+      "components": ["JAK1", "JAK2", "Y1007", "Y1008", "EPOR", "MPL", "STAT3", "STAT5", "Y705", "Y694", "MYC", "BCL2", "PIM1"],
+      "direction": "inhibition"
+    }
+  },
+  {
+    "id": "mech_005",
+    "agent": "Venetoclax",
+    "pathway": "BCL-2 apoptotic pathway",
+    "abstract": "Venetoclax is a selective BCL-2 inhibitor that induces apoptosis in BCL-2-dependent cancer cells. The drug is a BH3-mimetic that binds with high affinity to the BH3-binding groove of BCL-2 protein. Structural studies showed that venetoclax occupies the hydrophobic pocket normally bound by pro-apoptotic BH3-only proteins such as BIM, displacing them from BCL-2. This displacement liberates sequestered BIM, which then activates the pro-apoptotic effectors BAX and BAK. In chronic lymphocytic leukemia cells, venetoclax treatment caused rapid (within 4 hours) conformational activation of BAX and BAK, leading to their oligomerization and insertion into the mitochondrial outer membrane. BAX/BAK pores induced mitochondrial outer membrane permeabilization (MOMP), releasing cytochrome c into the cytosol. Cytochrome c triggered formation of the apoptosome complex with APAF-1 and procaspase-9, leading to caspase-9 activation. Active caspase-9 cleaved and activated executioner caspases-3 and -7, culminating in apoptotic cell death characterized by DNA fragmentation and phosphatidylserine externalization.",
+    "gold_mechanism": {
+      "summary": "Venetoclax binds BCL-2 and displaces BH3-only proteins like BIM, which activate BAX/BAK to induce mitochondrial permeabilization, cytochrome c release, and caspase-dependent apoptosis",
+      "components": ["BCL-2", "BIM", "BAX", "BAK", "mitochondrial outer membrane", "cytochrome c", "APAF-1", "caspase-9", "caspase-3", "caspase-7"],
+      "direction": "activation"
+    }
+  }
+]

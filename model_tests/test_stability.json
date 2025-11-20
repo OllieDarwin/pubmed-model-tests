@@ -1,0 +1,58 @@
+[
+  {
+    "id": "stab_001",
+    "test_type": "relevance",
+    "agent": "Trastuzumab",
+    "pathway": "HER2 signaling",
+    "abstract": "Trastuzumab is a monoclonal antibody that specifically targets the HER2 receptor. By binding to the extracellular domain of HER2, trastuzumab prevents receptor dimerization and inhibits downstream PI3K/AKT and MAPK signaling pathways. In HER2-positive breast cancer cells, treatment with trastuzumab resulted in significant reduction of phosphorylated AKT and ERK1/2, demonstrating effective blockade of HER2-mediated oncogenic signaling.",
+    "expected_schema": {
+      "relevance": "string (relevant|not_relevant)",
+      "rationale": "string"
+    }
+  },
+  {
+    "id": "stab_002",
+    "test_type": "relevance",
+    "agent": "Aspirin",
+    "pathway": "MAPK/ERK pathway",
+    "abstract": "Low-dose aspirin has been shown to reduce the risk of cardiovascular events in high-risk patients. A retrospective cohort study of 50,000 patients found that daily aspirin use was associated with 25% reduction in myocardial infarction and stroke incidence over 10-year follow-up. The cardioprotective effects are attributed to irreversible inhibition of platelet cyclooxygenase-1 (COX-1), reducing thromboxane A2 production and platelet aggregation.",
+    "expected_schema": {
+      "relevance": "string (relevant|not_relevant)",
+      "rationale": "string"
+    }
+  },
+  {
+    "id": "stab_003",
+    "test_type": "mechanism",
+    "agent": "Osimertinib",
+    "pathway": "EGFR signaling",
+    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. Biochemical assays demonstrated that osimertinib treatment abolished phosphorylation of EGFR at Y1068 and Y1173, key autophosporylation sites. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC, leading to inhibition of both RAS/MAPK and PI3K/AKT signaling cascades.",
+    "expected_schema": {
+      "mechanism_summary": "string",
+      "molecular_components": "array of strings",
+      "direction_of_effect": "string (activation|inhibition|unknown)"
+    }
+  },
+  {
+    "id": "stab_004",
+    "test_type": "quality",
+    "agent": "Palbociclib",
+    "pathway": "CDK4/6-Rb pathway",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that has shown efficacy in hormone receptor-positive breast cancer. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM, respectively. In MCF7 breast cancer cells, palbociclib treatment blocked Rb phosphorylation at CDK4/6-specific sites within 2 hours. In orthotopic xenograft models, oral palbociclib significantly reduced tumor growth (p<0.001). Phase III clinical trials demonstrated that palbociclib plus endocrine therapy significantly improved progression-free survival versus endocrine therapy alone in patients with advanced ER+/HER2- breast cancer.",
+    "expected_schema": {
+      "evidence_quality": "string (strong|moderate|weak|insufficient)",
+      "justification": "string"
+    }
+  },
+  {
+    "id": "stab_005",
+    "test_type": "quality",
+    "agent": "Sorafenib",
+    "pathway": "VEGFR/RAF signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR, PDGFR, and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib 400 mg twice daily. Of these patients, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated. Some laboratory experiments performed by other groups have shown that sorafenib can inhibit kinase activity in cell lines, though the specific mechanism remains unclear.",
+    "expected_schema": {
+      "evidence_quality": "string (strong|moderate|weak|insufficient)",
+      "justification": "string"
+    }
+  }
+]

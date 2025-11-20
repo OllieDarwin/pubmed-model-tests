@@ -1,0 +1,42 @@
+[
+  {
+    "id": "qual_001",
+    "agent": "Cetuximab",
+    "pathway": "EGFR signaling",
+    "abstract": "Cetuximab is a chimeric monoclonal antibody targeting the epidermal growth factor receptor (EGFR). To investigate its mechanism of action, we performed Western blot analysis on HCT116 colorectal cancer cells treated with cetuximab (10 μg/mL) for 24 hours. Results showed reduction in phospho-EGFR (Y1068) levels compared to vehicle control. We also observed decreased phosphorylation of downstream effectors ERK1/2 and AKT by immunoblotting. Subsequent cell viability assays using MTT revealed dose-dependent growth inhibition with IC50 of approximately 5 μg/mL at 72 hours. Flow cytometry analysis indicated increased percentage of cells in G1 phase after cetuximab treatment. These in vitro findings suggest that cetuximab inhibits EGFR signaling and reduces proliferation of colorectal cancer cells. Further validation in animal models and clinical trials would strengthen these conclusions.",
+    "gold_label": "moderate",
+    "notes": "In vitro data with multiple mechanistic assays (Western blot, cell viability, flow cytometry) but lacks in vivo validation"
+  },
+  {
+    "id": "qual_002",
+    "agent": "Palbociclib",
+    "pathway": "CDK4/6-Rb pathway",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that has shown efficacy in hormone receptor-positive breast cancer. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM, respectively, with >1000-fold selectivity over other CDKs. In MCF7 breast cancer cells, palbociclib treatment (500 nM) blocked Rb phosphorylation at CDK4/6-specific sites (Ser780, Ser795) within 2 hours, as assessed by phospho-specific antibodies. Chromatin immunoprecipitation (ChIP) assays demonstrated that hypophosphorylated Rb remained bound to E2F target gene promoters, preventing transcriptional activation. RNA-seq analysis revealed suppression of E2F-regulated genes essential for S-phase entry, including CCNE1, CDC6, and MCM genes. Cell cycle profiling confirmed G1 arrest with no progression to S-phase. In orthotopic xenograft models using MCF7 cells in nude mice, oral palbociclib (100 mg/kg daily) significantly reduced tumor growth (p<0.001) and decreased Ki-67 proliferation index. Importantly, Phase III clinical trials (PALOMA-2, PALOMA-3) demonstrated that palbociclib plus endocrine therapy significantly improved progression-free survival versus endocrine therapy alone in patients with advanced ER+/HER2- breast cancer, with consistent efficacy across patient subgroups.",
+    "gold_label": "strong",
+    "notes": "Comprehensive evidence: biochemical validation, detailed mechanistic studies in vitro, in vivo efficacy, and clinical trial validation"
+  },
+  {
+    "id": "qual_003",
+    "agent": "Crizotinib",
+    "pathway": "ALK signaling",
+    "abstract": "Anaplastic lymphoma kinase (ALK) rearrangements occur in approximately 3-5% of non-small cell lung cancer (NSCLC) cases. Crizotinib is an ALK inhibitor that has been approved for treatment of ALK-positive NSCLC. A retrospective chart review of 45 patients treated at our institution between 2015-2020 showed that 62% of patients achieved partial response (PR) according to RECIST criteria, with median progression-free survival of 9.2 months. The most common adverse events were visual disturbances (33%), nausea (28%), and elevated transaminases (15%). In our case series, patients with baseline brain metastases appeared to have shorter PFS (6.1 months) compared to those without (11.3 months), though this difference did not reach statistical significance (p=0.09). These real-world data support the efficacy of crizotinib in ALK-positive NSCLC patients.",
+    "gold_label": "weak",
+    "notes": "Retrospective clinical data only, no mechanistic investigation, small sample size, lacks controlled comparison"
+  },
+  {
+    "id": "qual_004",
+    "agent": "Sorafenib",
+    "pathway": "VEGFR/RAF signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR, PDGFR, and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib 400 mg twice daily. Of these patients, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated. Some laboratory experiments performed by other groups have shown that sorafenib can inhibit kinase activity in cell lines, though the specific mechanism remains unclear. Based on our limited experience, sorafenib may have some activity in HCC, but larger controlled trials are needed.",
+    "gold_label": "insufficient",
+    "notes": "Very limited patient data, no mechanistic investigation in this study, relies on others' work without detail, no statistical analysis"
+  },
+  {
+    "id": "qual_005",
+    "agent": "Bortezomib",
+    "pathway": "NF-κB pathway (via proteasome inhibition)",
+    "abstract": "Bortezomib is a selective proteasome inhibitor that prevents degradation of IκB proteins, thereby blocking NF-κB activation. Using a fluorogenic substrate assay, we confirmed that bortezomib inhibits the chymotrypsin-like activity of the 20S proteasome with Ki of 0.6 nM. In multiple myeloma cell lines (RPMI-8226, U266), bortezomib treatment (10 nM, 8 hours) led to accumulation of polyubiquitinated proteins detected by anti-ubiquitin immunoblotting. Specifically, we observed stabilization of IκBα protein levels and decreased nuclear translocation of NF-κB p65 subunit by immunofluorescence and subcellular fractionation. Electrophoretic mobility shift assays (EMSA) confirmed reduced NF-κB DNA-binding activity. Luciferase reporter assays showed 75% reduction in NF-κB transcriptional activity. RT-qPCR analysis revealed decreased expression of NF-κB target genes including IL6, BCL2, and CCND1. Annexin V/PI flow cytometry demonstrated increased apoptosis (40% at 24h vs 5% control). In SCID mice bearing subcutaneous RPMI-8226 xenografts, bortezomib (1 mg/kg IV, twice weekly) significantly inhibited tumor growth compared to vehicle control (tumor volume reduction 65%, p<0.01). However, clinical trial data have shown variable response rates, and optimal patient selection criteria remain under investigation.",
+    "gold_label": "strong",
+    "notes": "Rigorous mechanistic characterization from biochemical to cellular level, in vivo validation, though clinical efficacy noted as variable"
+  }
+]

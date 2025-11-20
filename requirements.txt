@@ -1,0 +1,19 @@
+# Core dependencies for LLM evaluation
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Optional: For specific models
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# Development
+jupyter>=1.0.0
+ipython>=8.12.0
