@@ -2,41 +2,401 @@
   {
     "id": "qual_001",
     "agent": "Cetuximab",
-    "pathway": "EGFR signaling",
-    "abstract": "Cetuximab is a chimeric monoclonal antibody targeting the epidermal growth factor receptor (EGFR). To investigate its mechanism of action, we performed Western blot analysis on HCT116 colorectal cancer cells treated with cetuximab (10 μg/mL) for 24 hours. Results showed reduction in phospho-EGFR (Y1068) levels compared to vehicle control. We also observed decreased phosphorylation of downstream effectors ERK1/2 and AKT by immunoblotting. Subsequent cell viability assays using MTT revealed dose-dependent growth inhibition with IC50 of approximately 5 μg/mL at 72 hours. Flow cytometry analysis indicated increased percentage of cells in G1 phase after cetuximab treatment. These in vitro findings suggest that cetuximab inhibits EGFR signaling and reduces proliferation of colorectal cancer cells. Further validation in animal models and clinical trials would strengthen these conclusions.",
+    "pathway": "EGFR Signaling",
+    "abstract": "Cetuximab is a chimeric monoclonal antibody targeting the epidermal growth factor receptor (EGFR). To investigate its mechanism of action, we performed Western blot analysis on HCT116 colorectal cancer cells treated with cetuximab (10 μg/mL) for 24 hours. Results showed reduction in phospho-EGFR (Y1068) levels compared to vehicle control. We also observed decreased phosphorylation of downstream effectors ERK1/2 and AKT by immunoblotting. Subsequent cell viability assays using MTT revealed dose-dependent growth inhibition with IC50 of approximately 5 μg/mL at 72 hours. Flow cytometry analysis indicated increased percentage of cells in G1 phase after cetuximab treatment.",
     "gold_label": "moderate",
-    "notes": "In vitro data with multiple mechanistic assays (Western blot, cell viability, flow cytometry) but lacks in vivo validation"
+    "notes": "In vitro data with multiple mechanistic assays but lacks in vivo validation"
   },
   {
     "id": "qual_002",
     "agent": "Palbociclib",
-    "pathway": "CDK4/6-Rb pathway",
-    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that has shown efficacy in hormone receptor-positive breast cancer. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM, respectively, with >1000-fold selectivity over other CDKs. In MCF7 breast cancer cells, palbociclib treatment (500 nM) blocked Rb phosphorylation at CDK4/6-specific sites (Ser780, Ser795) within 2 hours, as assessed by phospho-specific antibodies. Chromatin immunoprecipitation (ChIP) assays demonstrated that hypophosphorylated Rb remained bound to E2F target gene promoters, preventing transcriptional activation. RNA-seq analysis revealed suppression of E2F-regulated genes essential for S-phase entry, including CCNE1, CDC6, and MCM genes. Cell cycle profiling confirmed G1 arrest with no progression to S-phase. In orthotopic xenograft models using MCF7 cells in nude mice, oral palbociclib (100 mg/kg daily) significantly reduced tumor growth (p<0.001) and decreased Ki-67 proliferation index. Importantly, Phase III clinical trials (PALOMA-2, PALOMA-3) demonstrated that palbociclib plus endocrine therapy significantly improved progression-free survival versus endocrine therapy alone in patients with advanced ER+/HER2- breast cancer, with consistent efficacy across patient subgroups.",
+    "pathway": "Cell Cycle",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that has shown efficacy in hormone receptor-positive breast cancer. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM, respectively, with >1000-fold selectivity over other CDKs. In MCF7 breast cancer cells, palbociclib treatment blocked Rb phosphorylation at CDK4/6-specific sites within 2 hours. ChIP assays demonstrated hypophosphorylated Rb remained bound to E2F target gene promoters. RNA-seq analysis revealed suppression of E2F-regulated genes. In orthotopic xenograft models, oral palbociclib significantly reduced tumor growth (p<0.001). Phase III clinical trials (PALOMA-2, PALOMA-3) demonstrated improved progression-free survival versus endocrine therapy alone.",
     "gold_label": "strong",
-    "notes": "Comprehensive evidence: biochemical validation, detailed mechanistic studies in vitro, in vivo efficacy, and clinical trial validation"
+    "notes": "Comprehensive: biochemical, mechanistic, in vivo, and clinical validation"
   },
   {
     "id": "qual_003",
     "agent": "Crizotinib",
-    "pathway": "ALK signaling",
-    "abstract": "Anaplastic lymphoma kinase (ALK) rearrangements occur in approximately 3-5% of non-small cell lung cancer (NSCLC) cases. Crizotinib is an ALK inhibitor that has been approved for treatment of ALK-positive NSCLC. A retrospective chart review of 45 patients treated at our institution between 2015-2020 showed that 62% of patients achieved partial response (PR) according to RECIST criteria, with median progression-free survival of 9.2 months. The most common adverse events were visual disturbances (33%), nausea (28%), and elevated transaminases (15%). In our case series, patients with baseline brain metastases appeared to have shorter PFS (6.1 months) compared to those without (11.3 months), though this difference did not reach statistical significance (p=0.09). These real-world data support the efficacy of crizotinib in ALK-positive NSCLC patients.",
+    "pathway": "MET Signaling",
+    "abstract": "Crizotinib is an ALK/MET inhibitor approved for ALK-positive NSCLC. A retrospective chart review of 45 patients treated at our institution between 2015-2020 showed that 62% achieved partial response according to RECIST criteria, with median PFS of 9.2 months. The most common adverse events were visual disturbances (33%), nausea (28%), and elevated transaminases (15%). Patients with baseline brain metastases had shorter PFS (6.1 months) compared to those without (11.3 months), though not statistically significant (p=0.09).",
     "gold_label": "weak",
-    "notes": "Retrospective clinical data only, no mechanistic investigation, small sample size, lacks controlled comparison"
+    "notes": "Retrospective clinical data, no mechanistic investigation, small sample"
   },
   {
     "id": "qual_004",
     "agent": "Sorafenib",
-    "pathway": "VEGFR/RAF signaling",
-    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR, PDGFR, and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib 400 mg twice daily. Of these patients, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated. Some laboratory experiments performed by other groups have shown that sorafenib can inhibit kinase activity in cell lines, though the specific mechanism remains unclear. Based on our limited experience, sorafenib may have some activity in HCC, but larger controlled trials are needed.",
+    "pathway": "VEGF Signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib 400 mg twice daily. Of these, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated. Some laboratory experiments by other groups have shown kinase inhibition in cell lines, though specific mechanisms remain unclear.",
     "gold_label": "insufficient",
-    "notes": "Very limited patient data, no mechanistic investigation in this study, relies on others' work without detail, no statistical analysis"
+    "notes": "Very limited patient data, no mechanistic investigation, relies on others' work"
   },
   {
     "id": "qual_005",
     "agent": "Bortezomib",
-    "pathway": "NF-κB pathway (via proteasome inhibition)",
-    "abstract": "Bortezomib is a selective proteasome inhibitor that prevents degradation of IκB proteins, thereby blocking NF-κB activation. Using a fluorogenic substrate assay, we confirmed that bortezomib inhibits the chymotrypsin-like activity of the 20S proteasome with Ki of 0.6 nM. In multiple myeloma cell lines (RPMI-8226, U266), bortezomib treatment (10 nM, 8 hours) led to accumulation of polyubiquitinated proteins detected by anti-ubiquitin immunoblotting. Specifically, we observed stabilization of IκBα protein levels and decreased nuclear translocation of NF-κB p65 subunit by immunofluorescence and subcellular fractionation. Electrophoretic mobility shift assays (EMSA) confirmed reduced NF-κB DNA-binding activity. Luciferase reporter assays showed 75% reduction in NF-κB transcriptional activity. RT-qPCR analysis revealed decreased expression of NF-κB target genes including IL6, BCL2, and CCND1. Annexin V/PI flow cytometry demonstrated increased apoptosis (40% at 24h vs 5% control). In SCID mice bearing subcutaneous RPMI-8226 xenografts, bortezomib (1 mg/kg IV, twice weekly) significantly inhibited tumor growth compared to vehicle control (tumor volume reduction 65%, p<0.01). However, clinical trial data have shown variable response rates, and optimal patient selection criteria remain under investigation.",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Bortezomib is a selective proteasome inhibitor that prevents IκB degradation, blocking NF-κB activation. Using fluorogenic substrate assays, we confirmed proteasome inhibition with Ki of 0.6 nM. In RPMI-8226 myeloma cells, bortezomib treatment led to IκBα accumulation and decreased nuclear NF-κB p65 by immunofluorescence. EMSA confirmed reduced NF-κB DNA-binding. RT-qPCR showed decreased IL6, BCL2, and CCND1 expression. Annexin V staining demonstrated increased apoptosis. In SCID mice bearing xenografts, bortezomib significantly inhibited tumor growth (65% reduction, p<0.01).",
     "gold_label": "strong",
-    "notes": "Rigorous mechanistic characterization from biochemical to cellular level, in vivo validation, though clinical efficacy noted as variable"
+    "notes": "Rigorous biochemical to cellular characterization with in vivo validation"
+  },
+  {
+    "id": "qual_006",
+    "agent": "Erlotinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Erlotinib is an EGFR tyrosine kinase inhibitor. We performed kinase assays showing erlotinib inhibits EGFR with IC50 of 2 nM. In HCC827 cells (EGFR exon 19 deletion), erlotinib blocked EGFR phosphorylation at Y1068 and reduced downstream phospho-ERK and phospho-AKT. Cell viability decreased in a dose-dependent manner with IC50 of 10 nM. Apoptosis was confirmed by caspase-3/7 activation assay. We validated findings in three additional EGFR-mutant cell lines with similar results.",
+    "gold_label": "moderate",
+    "notes": "Good in vitro mechanistic data across multiple cell lines, no in vivo"
+  },
+  {
+    "id": "qual_007",
+    "agent": "Pembrolizumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Pembrolizumab is an anti-PD-1 antibody that reverses T-cell exhaustion. Surface plasmon resonance confirmed high-affinity PD-1 binding (KD = 29 pM). In co-culture assays, pembrolizumab restored T-cell proliferation and IFN-γ production against tumor cells. Flow cytometry showed reduced TIM-3 and LAG-3 on TILs. In humanized mouse models, pembrolizumab reduced tumor burden by 70%. KEYNOTE trials in melanoma and NSCLC demonstrated significant OS benefit with durable responses lasting >2 years in responding patients.",
+    "gold_label": "strong",
+    "notes": "Complete evidence chain: binding, functional, preclinical, clinical"
+  },
+  {
+    "id": "qual_008",
+    "agent": "Ibrutinib",
+    "pathway": "B-cell Function",
+    "abstract": "Ibrutinib is a BTK inhibitor for B-cell malignancies. Kinase assays showed irreversible BTK inhibition with IC50 of 0.5 nM. In CLL patient samples, ibrutinib blocked BCR-induced calcium flux and NF-κB activation. Phospho-BTK and phospho-PLCγ2 were reduced by >90% at 1 μM. Cell proliferation assays showed dose-dependent growth inhibition. Migration assays demonstrated reduced chemotaxis toward CXCL12/13. Clinical trials in CLL and MCL showed high response rates and prolonged PFS.",
+    "gold_label": "strong",
+    "notes": "Comprehensive mechanistic and clinical validation"
+  },
+  {
+    "id": "qual_009",
+    "agent": "Gefitinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Gefitinib showed promising activity in our preliminary screen of EGFR inhibitors. We treated PC9 cells with gefitinib and observed cell death by visual inspection. Western blot suggested reduced EGFR phosphorylation, though bands were difficult to quantify. A small pilot study of 8 patients showed tumor shrinkage in 3 patients. Further studies are warranted to confirm these initial observations.",
+    "gold_label": "insufficient",
+    "notes": "Preliminary data, poor quantification, very small patient numbers"
+  },
+  {
+    "id": "qual_010",
+    "agent": "Trastuzumab",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Trastuzumab is a humanized anti-HER2 antibody. Binding studies showed high affinity for HER2 extracellular domain (KD = 5 nM). In SKBR3 cells, trastuzumab reduced surface HER2 by FACS and decreased phospho-HER2 by Western blot. Downstream phospho-AKT was reduced by 60%. ADCC assays with NK cells showed 40% specific lysis. In HER2+ xenografts, trastuzumab reduced tumor volume by 80% (p<0.001). Phase III trials in HER2+ breast cancer demonstrated significant DFS and OS improvement with adjuvant trastuzumab.",
+    "gold_label": "strong",
+    "notes": "Complete mechanistic, preclinical, and clinical evidence"
+  },
+  {
+    "id": "qual_011",
+    "agent": "Vemurafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Vemurafenib is a BRAF V600E inhibitor. We performed cell viability assays in A375 melanoma cells showing IC50 of 100 nM. Western blots confirmed reduced phospho-ERK at 1 μM. The drug appeared to cause cell cycle arrest based on reduced cell counts. Similar effects were seen in two other BRAF-mutant cell lines.",
+    "gold_label": "weak",
+    "notes": "Limited in vitro data, basic assays only, no in vivo or clinical"
+  },
+  {
+    "id": "qual_012",
+    "agent": "Olaparib",
+    "pathway": "DNA Damage Repair",
+    "abstract": "Olaparib is a PARP inhibitor approved for BRCA-mutant cancers. Biochemical assays showed PARP1/2 inhibition with IC50 of 5 nM and 1 nM respectively. PARP trapping was demonstrated by chromatin fractionation. In BRCA1-mutant MDA-MB-436 cells, olaparib increased γH2AX foci 10-fold and induced synthetic lethality with IC50 of 0.5 μM (vs >100 μM in BRCA-WT cells). Xenograft studies showed 90% tumor regression in BRCA-deficient models. Phase III OlympiAD trial demonstrated significant PFS benefit in germline BRCA-mutant breast cancer.",
+    "gold_label": "strong",
+    "notes": "Excellent mechanistic rationale with clinical validation"
+  },
+  {
+    "id": "qual_013",
+    "agent": "Ruxolitinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ruxolitinib is a JAK1/2 inhibitor for myeloproliferative neoplasms. Kinase assays confirmed JAK1/JAK2 inhibition with IC50 of 3.3 nM and 2.8 nM. In SET-2 cells (JAK2 V617F), ruxolitinib blocked STAT5 phosphorylation and reduced expression of PIM1 and BCL-XL by RT-qPCR. Proliferation was inhibited with IC50 of 127 nM. In patient samples, ruxolitinib reduced constitutive STAT phosphorylation. COMFORT trials demonstrated spleen volume reduction and symptom improvement in myelofibrosis patients.",
+    "gold_label": "strong",
+    "notes": "Comprehensive evidence from biochemical to clinical"
+  },
+  {
+    "id": "qual_014",
+    "agent": "Everolimus",
+    "pathway": "mTOR Signaling",
+    "abstract": "Everolimus is an mTOR inhibitor. We reviewed published literature on mTOR signaling and its role in cancer. Based on theoretical considerations, everolimus should inhibit S6K1 and 4E-BP1 phosphorylation. Some clinical trials have been conducted but we did not perform any experiments. The drug is approved for several cancer types.",
+    "gold_label": "insufficient",
+    "notes": "Literature review only, no original experimental data"
+  },
+  {
+    "id": "qual_015",
+    "agent": "Dabrafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Dabrafenib potently inhibits BRAF V600E with IC50 of 0.5 nM in biochemical assays and >100-fold selectivity over wild-type BRAF. In melanoma cells, dabrafenib abolished phospho-MEK and phospho-ERK within 1 hour. Gene expression profiling showed downregulation of MAPK target genes. Colony formation was inhibited by >95%. In BRAF-mutant xenografts, dabrafenib caused tumor regression. Phase III trials demonstrated significant improvement in PFS and OS versus dacarbazine in BRAF V600-mutant melanoma.",
+    "gold_label": "strong",
+    "notes": "Complete evidence chain with clinical validation"
+  },
+  {
+    "id": "qual_016",
+    "agent": "Alpelisib",
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Alpelisib is an α-specific PI3K inhibitor. Kinase selectivity assays showed 50-fold selectivity for p110α over other PI3K isoforms. In PIK3CA-mutant MCF7 cells, alpelisib reduced phospho-AKT by >90% and caused G1 arrest. RNA-seq revealed FOXO target gene upregulation. In xenograft models, alpelisib significantly inhibited tumor growth in PIK3CA-mutant but not wild-type tumors, demonstrating mutant selectivity.",
+    "gold_label": "moderate",
+    "notes": "Good mechanistic and in vivo data, clinical data not included"
+  },
+  {
+    "id": "qual_017",
+    "agent": "Lapatinib",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Lapatinib is a dual EGFR/HER2 TKI. In vitro kinase assays showed IC50 of 10.8 nM for EGFR and 9.2 nM for HER2. In BT474 cells, lapatinib blocked HER2 phosphorylation and downstream AKT signaling. We observed G1 arrest by flow cytometry and apoptosis by Annexin V staining. Combination with trastuzumab showed synergistic effects. Phase III trials with lapatinib plus capecitabine demonstrated improved TTP in HER2+ metastatic breast cancer.",
+    "gold_label": "strong",
+    "notes": "Biochemical, cellular, combination, and clinical data"
+  },
+  {
+    "id": "qual_018",
+    "agent": "Sunitinib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Sunitinib is a multi-kinase inhibitor. We performed endothelial cell tube formation assays showing inhibition at 100 nM. HUVEC proliferation was reduced in a dose-dependent manner. Phospho-VEGFR2 was decreased by Western blot. These results suggest anti-angiogenic activity consistent with VEGFR inhibition.",
+    "gold_label": "weak",
+    "notes": "Basic in vitro data only, no in vivo or patient data"
+  },
+  {
+    "id": "qual_019",
+    "agent": "Nivolumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Nivolumab is a fully human anti-PD-1 antibody. Binding affinity was determined as KD = 2.6 nM by SPR. In mixed lymphocyte reactions, nivolumab enhanced T-cell proliferation and cytokine production. Tumor-infiltrating lymphocytes showed restored cytotoxic function ex vivo. In syngeneic mouse models with human PD-1 knock-in, nivolumab reduced tumor growth. CheckMate trials across multiple tumor types demonstrated durable responses and survival benefit.",
+    "gold_label": "strong",
+    "notes": "Complete preclinical and clinical evidence package"
+  },
+  {
+    "id": "qual_020",
+    "agent": "Abemaciclib",
+    "pathway": "Cell Cycle",
+    "abstract": "Abemaciclib is a CDK4/6 inhibitor. Kinase profiling showed IC50 of 2 nM for CDK4 and 5 nM for CDK6. In breast cancer cells, abemaciclib blocked Rb phosphorylation and caused G1 arrest. Unlike other CDK4/6 inhibitors, abemaciclib achieves continuous target inhibition allowing daily dosing. Xenograft studies showed significant tumor growth inhibition.",
+    "gold_label": "moderate",
+    "notes": "Good mechanistic and preclinical data, no clinical data presented"
+  },
+  {
+    "id": "qual_021",
+    "agent": "Trametinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Trametinib is an allosteric MEK1/2 inhibitor with IC50 of 0.92 nM and 1.8 nM respectively. Crystal structures revealed binding mode locking MEK in inactive conformation. In melanoma cells, trametinib caused >95% reduction in phospho-ERK. Transcriptomic analysis showed suppression of MAPK-dependent genes. In BRAF-mutant xenografts, trametinib caused tumor regression. Phase III trials showed improved PFS versus chemotherapy and synergy with BRAF inhibitors.",
+    "gold_label": "strong",
+    "notes": "Structural, mechanistic, preclinical, and clinical validation"
+  },
+  {
+    "id": "qual_022",
+    "agent": "Axitinib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Axitinib potently inhibits VEGFR1-3 with IC50 values in the picomolar range. We assessed anti-angiogenic effects in multiple assays. HUVEC proliferation IC50 was 0.2 nM. Tube formation was blocked at 1 nM. Rat aortic ring sprouting was inhibited. In RCC xenografts, axitinib reduced microvessel density by 70% and tumor growth by 85%. DCE-MRI showed reduced tumor perfusion within 24 hours of treatment.",
+    "gold_label": "moderate",
+    "notes": "Excellent preclinical package but no clinical efficacy data"
+  },
+  {
+    "id": "qual_023",
+    "agent": "Pazopanib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Pazopanib inhibits VEGFR, PDGFR, and c-KIT. A case report describes a 67-year-old patient with metastatic RCC who achieved partial response lasting 14 months on pazopanib 800 mg daily. The patient experienced manageable hypertension and fatigue. This suggests pazopanib may be effective in selected patients.",
+    "gold_label": "insufficient",
+    "notes": "Single case report, no mechanistic data"
+  },
+  {
+    "id": "qual_024",
+    "agent": "Cabozantinib",
+    "pathway": "MET Signaling",
+    "abstract": "Cabozantinib is a multi-kinase inhibitor targeting MET, VEGFR2, and AXL. Kinase assays confirmed low nanomolar IC50 values for all targets. In MET-amplified gastric cancer cells, cabozantinib blocked HGF-induced MET phosphorylation and downstream signaling. Cell scatter assays showed inhibition of MET-driven motility. In xenografts, cabozantinib reduced MET-amplified tumor growth by 85%.",
+    "gold_label": "moderate",
+    "notes": "Strong preclinical data for MET inhibition, no clinical"
+  },
+  {
+    "id": "qual_025",
+    "agent": "Regorafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Regorafenib inhibits multiple kinases including VEGFR, PDGFR, and RAF. In colorectal cancer cell lines, regorafenib reduced phospho-ERK levels at 1 μM concentration. Cell viability was decreased in a panel of 10 CRC cell lines with variable sensitivity. We did not observe correlation between sensitivity and specific mutations.",
+    "gold_label": "weak",
+    "notes": "Limited in vitro data, no clear mechanistic insight"
+  },
+  {
+    "id": "qual_026",
+    "agent": "Lenvatinib",
+    "pathway": "FGFR Signaling",
+    "abstract": "Lenvatinib is a multi-kinase inhibitor with activity against VEGFR, FGFR, PDGFR, and RET. We focused on FGFR inhibition using FGF-dependent cell lines. Lenvatinib blocked FGF2-induced FGFR1 phosphorylation with IC50 of 22 nM. FRS2 phosphorylation was reduced. In FGFR-amplified cancer cells, lenvatinib caused G1 arrest. Xenograft studies in FGFR-driven models showed significant anti-tumor activity.",
+    "gold_label": "moderate",
+    "notes": "Good mechanistic data for FGFR, in vivo validation"
+  },
+  {
+    "id": "qual_027",
+    "agent": "Nintedanib",
+    "pathway": "PDGF Signaling",
+    "abstract": "Nintedanib is an angiokinase inhibitor. In lung fibroblasts, nintedanib blocked PDGF-induced proliferation (IC50 = 60 nM) and collagen synthesis. Phospho-PDGFR was reduced by Western blot. Scratch wound assays showed inhibited migration. In bleomycin-induced pulmonary fibrosis models, nintedanib reduced collagen deposition and fibrosis scores. Phase III INPULSIS trials demonstrated slowed FVC decline in IPF patients.",
+    "gold_label": "strong",
+    "notes": "Complete translational evidence from cells to patients"
+  },
+  {
+    "id": "qual_028",
+    "agent": "Osimertinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Osimertinib is designed to inhibit EGFR T790M. Biochemical assays showed IC50 of 1 nM for T790M and L858R mutants with 200-fold selectivity over wild-type. In H1975 cells (L858R/T790M), osimertinib caused complete EGFR inhibition and apoptosis. Brain penetration was demonstrated in preclinical models. AURA3 and FLAURA trials established osimertinib as standard of care with superior PFS and OS versus earlier TKIs.",
+    "gold_label": "strong",
+    "notes": "Excellent selectivity data with clinical validation"
+  },
+  {
+    "id": "qual_029",
+    "agent": "Ponatinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ponatinib was designed to inhibit BCR-ABL T315I mutation. Computational modeling predicted binding to T315I mutant. Biochemical assays confirmed IC50 of 0.5 nM. In Ba/F3-T315I cells, ponatinib blocked BCR-ABL signaling and induced apoptosis. Primary CML samples with T315I showed ex vivo sensitivity. PACE trial demonstrated high response rates in T315I-positive CML patients.",
+    "gold_label": "strong",
+    "notes": "Rational design with clinical validation in target population"
+  },
+  {
+    "id": "qual_030",
+    "agent": "Dasatinib",
+    "pathway": "Cell Adhesion & Motility",
+    "abstract": "Dasatinib is a SRC/ABL inhibitor. We studied SRC inhibition effects on cell motility. In breast cancer cells, dasatinib reduced migration by 60% in wound healing assays. Invasion through Matrigel was decreased by 70%. Phospho-FAK and phospho-paxillin were reduced, suggesting focal adhesion disruption.",
+    "gold_label": "weak",
+    "notes": "Limited functional data, no in vivo or clinical"
+  },
+  {
+    "id": "qual_031",
+    "agent": "Bosutinib",
+    "pathway": "Cell Adhesion & Motility",
+    "abstract": "Bosutinib inhibits SRC and ABL kinases. In multiple cancer cell lines, bosutinib reduced SRC phosphorylation at Y416 and downstream cortactin phosphorylation. Invadopodia formation was visualized by confocal microscopy and quantified showing 80% reduction. Matrix degradation assessed by gelatin zymography was decreased. 3D spheroid invasion assays confirmed reduced invasive capacity.",
+    "gold_label": "moderate",
+    "notes": "Detailed mechanistic studies on invasion, multiple assays"
+  },
+  {
+    "id": "qual_032",
+    "agent": "Alectinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Alectinib is a second-generation ALK inhibitor. Kinase assays showed IC50 of 1.9 nM for ALK and activity against crizotinib-resistant mutations. In ALK-rearranged cell lines, alectinib blocked phospho-ALK and downstream phospho-ERK. Brain penetration was 50-fold higher than crizotinib in mice. ALEX trial demonstrated superior PFS versus crizotinib, especially in patients with CNS metastases.",
+    "gold_label": "strong",
+    "notes": "Mutation coverage, CNS penetration, and clinical validation"
+  },
+  {
+    "id": "qual_033",
+    "agent": "Ceritinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Ceritinib is an ALK inhibitor with activity against crizotinib-resistant mutations. We performed viability assays in Ba/F3 cells expressing various ALK mutants. Ceritinib showed IC50 < 50 nM against most mutations tested. Phospho-ALK was reduced in patient-derived cell lines resistant to crizotinib.",
+    "gold_label": "weak",
+    "notes": "Limited mutation profiling data, no in vivo"
+  },
+  {
+    "id": "qual_034",
+    "agent": "Lorlatinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Lorlatinib is a third-generation ALK/ROS1 inhibitor designed for CNS penetration. Kinase assays confirmed broad mutation coverage including G1202R. Brain-to-plasma ratio was 0.75 in preclinical models. In ALK-rearranged cells, lorlatinib blocked STAT3 phosphorylation downstream of ALK. CROWN trial showed 96% intracranial response rate and 76% 3-year PFS in first-line setting.",
+    "gold_label": "strong",
+    "notes": "CNS penetration data with impressive clinical efficacy"
+  },
+  {
+    "id": "qual_035",
+    "agent": "Abiraterone",
+    "pathway": "Androgen Signaling",
+    "abstract": "Abiraterone is a CYP17A1 inhibitor. Enzyme assays showed potent inhibition of 17α-hydroxylase and 17,20-lyase. In prostate cancer models, abiraterone reduced intratumoral testosterone and DHT to castrate levels. PSA decreased by >50% in LNCaP xenografts. COU-AA-301 and COU-AA-302 trials demonstrated survival benefit in castration-resistant prostate cancer both post- and pre-docetaxel.",
+    "gold_label": "strong",
+    "notes": "Complete evidence from enzyme to survival benefit"
+  },
+  {
+    "id": "qual_036",
+    "agent": "Enzalutamide",
+    "pathway": "Androgen Signaling",
+    "abstract": "Enzalutamide is a second-generation AR antagonist. Competitive binding assays showed 5-fold higher affinity than bicalutamide. Unlike first-generation antiandrogens, enzalutamide prevented AR nuclear translocation in CRPC models. ChIP-seq confirmed loss of AR chromatin binding. PSA decreased in LNCaP-AR xenografts. AFFIRM and PREVAIL trials established survival benefit.",
+    "gold_label": "strong",
+    "notes": "Mechanistic differentiation with clinical validation"
+  },
+  {
+    "id": "qual_037",
+    "agent": "Fulvestrant",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Fulvestrant is an ER degrader. Radioligand binding showed high ER affinity. Unlike tamoxifen, fulvestrant induced ER proteasomal degradation confirmed by Western blot and immunohistochemistry. Nuclear ER decreased by >90%. No agonist activity in uterus. FALCON trial showed improved PFS versus anastrozole in advanced ER+ breast cancer.",
+    "gold_label": "strong",
+    "notes": "Clear mechanistic differentiation and clinical benefit"
+  },
+  {
+    "id": "qual_038",
+    "agent": "Tamoxifen",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Tamoxifen is a selective estrogen receptor modulator. Our retrospective analysis of 500 patients treated with adjuvant tamoxifen showed 40% reduction in recurrence at 5 years. Compliance was 85%. Hot flashes were reported by 60% of patients. These real-world data support the efficacy of tamoxifen in clinical practice.",
+    "gold_label": "weak",
+    "notes": "Retrospective clinical data only, no mechanistic investigation"
+  },
+  {
+    "id": "qual_039",
+    "agent": "Anastrozole",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Anastrozole is an aromatase inhibitor. Enzyme assays showed IC50 of 15 nM with >1000-fold selectivity over other CYP enzymes. In postmenopausal patients, anastrozole suppressed plasma estradiol to <3 pg/mL. Breast tumor estradiol also decreased. ATAC trial demonstrated superior DFS versus tamoxifen with favorable side effect profile.",
+    "gold_label": "strong",
+    "notes": "Biochemical selectivity with clinical superiority data"
+  },
+  {
+    "id": "qual_040",
+    "agent": "Vismodegib",
+    "pathway": "Hedgehog",
+    "abstract": "Vismodegib is a SMO antagonist. Binding assays confirmed high-affinity SMO binding. In Hedgehog-dependent cell lines, vismodegib reduced GLI1 mRNA by qPCR. Ptch1 lacZ reporter mice showed pathway inhibition in vivo. In spontaneous BCC mouse model, vismodegib caused tumor regression. ERIVANCE trial showed 43% objective response rate in advanced BCC.",
+    "gold_label": "strong",
+    "notes": "Reporter assays, genetic models, and clinical efficacy"
+  },
+  {
+    "id": "qual_041",
+    "agent": "Ipilimumab",
+    "pathway": "T-cell Costimulation",
+    "abstract": "Ipilimumab is an anti-CTLA-4 antibody. In vitro, ipilimumab enhanced T-cell proliferation in MLR assays. Treg depletion was observed in tumor microenvironment. Durable responses occurred in 20% of melanoma patients in phase III trials, with some patients alive >10 years. Biomarker studies showed correlation with tumor mutation burden.",
+    "gold_label": "strong",
+    "notes": "Functional assays with unprecedented long-term clinical outcomes"
+  },
+  {
+    "id": "qual_042",
+    "agent": "Durvalumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Durvalumab is an anti-PD-L1 antibody. We measured PD-L1 expression in 200 NSCLC samples by IHC using SP263 assay. 25% had PD-L1 ≥25%. Response to durvalumab correlated with PD-L1 expression. No mechanistic studies were performed. PACIFIC trial showed PFS benefit with concurrent chemoradiation.",
+    "gold_label": "moderate",
+    "notes": "Biomarker correlation and clinical trial, no mechanistic studies"
+  },
+  {
+    "id": "qual_043",
+    "agent": "Atezolizumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Atezolizumab is an anti-PD-L1 antibody engineered for reduced Fc effector function. Crystal structure showed binding to PD-L1. In co-culture assays, atezolizumab restored T-cell cytotoxicity. Unlike anti-PD-1, atezolizumab preserves PD-L2 interaction. IMpower trials established efficacy across multiple tumor types including combination with chemotherapy.",
+    "gold_label": "strong",
+    "notes": "Structural rationale with broad clinical validation"
+  },
+  {
+    "id": "qual_044",
+    "agent": "Rapamycin",
+    "pathway": "Autophagy",
+    "abstract": "Rapamycin inhibits mTORC1, relieving autophagy suppression. We measured autophagy induction by LC3-II Western blot and LC3 puncta formation. Rapamycin increased LC3-II levels 5-fold at 100 nM. Autophagic flux was confirmed using bafilomycin. p62 degradation indicated functional autophagy. Electron microscopy showed autophagosome accumulation.",
+    "gold_label": "moderate",
+    "notes": "Multiple complementary autophagy assays, no in vivo"
+  },
+  {
+    "id": "qual_045",
+    "agent": "Vorinostat",
+    "pathway": "Epigenetic & Transcriptional Regulation",
+    "abstract": "Vorinostat is a pan-HDAC inhibitor. We confirmed HDAC inhibition by increased acetyl-H3 and acetyl-H4 immunoblotting. Gene expression profiling showed upregulation of p21 and other cell cycle inhibitors. In CTCL cell lines, vorinostat induced apoptosis. Phase II trials in CTCL showed 30% response rate leading to FDA approval.",
+    "gold_label": "strong",
+    "notes": "Epigenetic changes, transcriptional effects, and clinical approval"
+  },
+  {
+    "id": "qual_046",
+    "agent": "Selinexor",
+    "pathway": "p53 Signaling",
+    "abstract": "Selinexor blocks XPO1-mediated nuclear export. We confirmed nuclear retention of p53-GFP fusion by live cell imaging. Endogenous p53 accumulated in nucleus by subcellular fractionation. p53 target genes (p21, BAX, PUMA) were induced by RT-qPCR. In p53-wild type myeloma cells, selinexor caused apoptosis dependent on p53 as shown by siRNA knockdown.",
+    "gold_label": "moderate",
+    "notes": "Good mechanistic studies, limited clinical data presented"
+  },
+  {
+    "id": "qual_047",
+    "agent": "Curcumin",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Curcumin is a natural compound with reported NF-κB inhibitory activity. We purchased curcumin from a commercial supplier and treated HeLa cells. NF-κB luciferase reporter activity was reduced. Western blots showed decreased nuclear p65. However, curcumin has poor bioavailability and effects in vivo are uncertain. No clinical trials have demonstrated efficacy.",
+    "gold_label": "weak",
+    "notes": "Basic in vitro data, acknowledged bioavailability limitations"
+  },
+  {
+    "id": "qual_048",
+    "agent": "Resveratrol",
+    "pathway": "Autophagy",
+    "abstract": "Resveratrol is a polyphenol that may induce autophagy. Literature reports suggest SIRT1 activation leads to autophagy. We observed LC3-II increase at 50 μM but not lower concentrations. Bioavailability is poor and circulating levels unlikely to achieve these concentrations. Clinical relevance is unclear.",
+    "gold_label": "weak",
+    "notes": "High concentrations needed, bioavailability concerns"
+  },
+  {
+    "id": "qual_049",
+    "agent": "EGCG",
+    "pathway": "EGFR Signaling",
+    "abstract": "EGCG from green tea may inhibit EGFR. We performed surface plasmon resonance showing EGCG binds EGFR with KD of 500 nM. In A431 cells, EGCG reduced EGF-induced phospho-EGFR at 50 μM. Proliferation was inhibited with IC50 of 40 μM. These concentrations exceed achievable plasma levels from tea consumption. Formulation strategies may improve bioavailability.",
+    "gold_label": "moderate",
+    "notes": "Binding and cellular data, but concentration limitations noted"
+  },
+  {
+    "id": "qual_050",
+    "agent": "Quercetin",
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Quercetin is a flavonoid with kinase inhibitory activity. PI3K biochemical assays showed IC50 of 1.5 μM. In cancer cells, quercetin reduced phospho-AKT at 10-50 μM. G1 arrest was observed. However, quercetin also inhibits numerous other kinases and has poor selectivity. Bioavailability is low. The clinical translatability of these findings is questionable.",
+    "gold_label": "weak",
+    "notes": "Multi-target effects, poor selectivity, bioavailability issues"
   }
 ]

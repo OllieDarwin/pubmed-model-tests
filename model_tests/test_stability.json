@@ -3,56 +3,400 @@
     "id": "stab_001",
     "test_type": "relevance",
     "agent": "Trastuzumab",
-    "pathway": "HER2 signaling",
-    "abstract": "Trastuzumab is a monoclonal antibody that specifically targets the HER2 receptor. By binding to the extracellular domain of HER2, trastuzumab prevents receptor dimerization and inhibits downstream PI3K/AKT and MAPK signaling pathways. In HER2-positive breast cancer cells, treatment with trastuzumab resulted in significant reduction of phosphorylated AKT and ERK1/2, demonstrating effective blockade of HER2-mediated oncogenic signaling.",
-    "expected_schema": {
-      "relevance": "string (relevant|not_relevant)",
-      "rationale": "string"
-    }
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Trastuzumab is a humanized monoclonal antibody targeting the HER2/ERBB2 receptor. By binding to domain IV of the ERBB2 extracellular region, trastuzumab prevents receptor homodimerization and heterodimerization with other ERBB family members. This blockade inhibits ligand-independent ERBB2 signaling and downstream PI3K/AKT and MAPK cascades. In HER2-amplified breast cancer cells, trastuzumab treatment reduced phospho-ERBB2, phospho-AKT, and phospho-ERK levels by >80%.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
   },
   {
     "id": "stab_002",
     "test_type": "relevance",
-    "agent": "Aspirin",
-    "pathway": "MAPK/ERK pathway",
-    "abstract": "Low-dose aspirin has been shown to reduce the risk of cardiovascular events in high-risk patients. A retrospective cohort study of 50,000 patients found that daily aspirin use was associated with 25% reduction in myocardial infarction and stroke incidence over 10-year follow-up. The cardioprotective effects are attributed to irreversible inhibition of platelet cyclooxygenase-1 (COX-1), reducing thromboxane A2 production and platelet aggregation.",
-    "expected_schema": {
-      "relevance": "string (relevant|not_relevant)",
-      "rationale": "string"
-    }
+    "agent": "Metformin",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Metformin is the first-line treatment for type 2 diabetes, working primarily through AMPK activation in hepatocytes to reduce gluconeogenesis. Large-scale clinical trials have demonstrated metformin's efficacy in reducing HbA1c levels and cardiovascular events in diabetic patients. The drug inhibits mitochondrial complex I, leading to increased AMP/ATP ratio and AMPK activation.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
   },
   {
     "id": "stab_003",
-    "test_type": "mechanism",
-    "agent": "Osimertinib",
-    "pathway": "EGFR signaling",
-    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. Biochemical assays demonstrated that osimertinib treatment abolished phosphorylation of EGFR at Y1068 and Y1173, key autophosporylation sites. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC, leading to inhibition of both RAS/MAPK and PI3K/AKT signaling cascades.",
-    "expected_schema": {
-      "mechanism_summary": "string",
-      "molecular_components": "array of strings",
-      "direction_of_effect": "string (activation|inhibition|unknown)"
-    }
+    "test_type": "relevance",
+    "agent": "Vemurafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Vemurafenib is a selective BRAF V600E inhibitor that binds to the ATP-binding pocket of mutant BRAF kinase. This binding prevents BRAF catalytic activity and blocks signal transduction through the MAPK pathway. Western blot analysis in A375 melanoma cells showed that vemurafenib treatment caused dose-dependent reduction in phospho-MEK1/2 and phospho-ERK1/2 levels.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
   },
   {
     "id": "stab_004",
-    "test_type": "quality",
-    "agent": "Palbociclib",
-    "pathway": "CDK4/6-Rb pathway",
-    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that has shown efficacy in hormone receptor-positive breast cancer. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM, respectively. In MCF7 breast cancer cells, palbociclib treatment blocked Rb phosphorylation at CDK4/6-specific sites within 2 hours. In orthotopic xenograft models, oral palbociclib significantly reduced tumor growth (p<0.001). Phase III clinical trials demonstrated that palbociclib plus endocrine therapy significantly improved progression-free survival versus endocrine therapy alone in patients with advanced ER+/HER2- breast cancer.",
-    "expected_schema": {
-      "evidence_quality": "string (strong|moderate|weak|insufficient)",
-      "justification": "string"
-    }
+    "test_type": "relevance",
+    "agent": "Rituximab",
+    "pathway": "EGFR Signaling",
+    "abstract": "Rituximab is a chimeric anti-CD20 monoclonal antibody used in B-cell malignancies and autoimmune diseases. CD20 is a surface antigen expressed on pre-B to mature B lymphocytes. Rituximab induces B-cell depletion through complement-dependent cytotoxicity, antibody-dependent cellular cytotoxicity, and direct apoptosis induction.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
   },
   {
     "id": "stab_005",
+    "test_type": "relevance",
+    "agent": "Pembrolizumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Pembrolizumab is an anti-PD-1 monoclonal antibody that blocks the interaction between PD-1 and its ligands PD-L1/PD-L2. PD-1 signaling induces T-cell exhaustion characterized by reduced proliferation, cytokine production, and cytotoxic function. By blocking PD-1, pembrolizumab prevents SHP-2 recruitment and restores TCR signaling.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_006",
+    "test_type": "mechanism",
+    "agent": "Osimertinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_007",
+    "test_type": "mechanism",
+    "agent": "Trametinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Trametinib is a highly selective allosteric MEK1/2 inhibitor that binds to a pocket adjacent to but not overlapping with the ATP-binding site. Crystal structure analysis revealed that trametinib locks MEK1/2 in a catalytically inactive conformation. In BRAF-mutant melanoma cells, trametinib treatment prevented MEK1/2-mediated phosphorylation of ERK1/2 at Thr202/Tyr204.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_008",
+    "test_type": "mechanism",
+    "agent": "Venetoclax",
+    "pathway": "Apoptosis",
+    "abstract": "Venetoclax is a selective BCL-2 inhibitor that induces apoptosis in BCL-2-dependent cancer cells. The drug is a BH3-mimetic that binds with high affinity to the BH3-binding groove of BCL-2 protein. This displaces sequestered BIM, which then activates pro-apoptotic effectors BAX and BAK, inducing mitochondrial outer membrane permeabilization.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_009",
+    "test_type": "mechanism",
+    "agent": "Ruxolitinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ruxolitinib is a JAK1/JAK2 inhibitor approved for treatment of myeloproliferative neoplasms. The drug competitively binds to the ATP-binding pocket of JAK1 and JAK2 kinases. In myelofibrosis patient samples harboring JAK2 V617F mutation, ruxolitinib treatment blocked constitutive JAK2 autophosphorylation and prevented STAT3/STAT5 phosphorylation.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_010",
+    "test_type": "mechanism",
+    "agent": "Ipilimumab",
+    "pathway": "T-cell Costimulation",
+    "abstract": "Ipilimumab is an anti-CTLA-4 antibody that blocks the inhibitory checkpoint receptor on T cells. CTLA-4 normally outcompetes CD28 for B7 ligand binding and delivers inhibitory signals. By blocking CTLA-4, ipilimumab allows CD28-mediated costimulation to proceed unimpeded, activating PI3K and AKT signaling.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_011",
+    "test_type": "quality",
+    "agent": "Palbociclib",
+    "pathway": "Cell Cycle",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor. Using kinase assays, we confirmed that palbociclib inhibits CDK4 and CDK6 with IC50 values of 11 nM and 16 nM. In MCF7 breast cancer cells, palbociclib blocked Rb phosphorylation. In orthotopic xenograft models, oral palbociclib significantly reduced tumor growth (p<0.001). Phase III clinical trials demonstrated improved progression-free survival.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_012",
     "test_type": "quality",
     "agent": "Sorafenib",
-    "pathway": "VEGFR/RAF signaling",
-    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR, PDGFR, and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib 400 mg twice daily. Of these patients, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated. Some laboratory experiments performed by other groups have shown that sorafenib can inhibit kinase activity in cell lines, though the specific mechanism remains unclear.",
-    "expected_schema": {
-      "evidence_quality": "string (strong|moderate|weak|insufficient)",
-      "justification": "string"
-    }
+    "pathway": "VEGF Signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR and RAF kinases. Previous studies have suggested it may be useful in hepatocellular carcinoma. We treated 12 patients with advanced HCC with sorafenib. Of these, 3 showed stable disease for at least 8 weeks, while 9 progressed. The drug was generally well-tolerated.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_013",
+    "test_type": "quality",
+    "agent": "Bortezomib",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Bortezomib is a selective proteasome inhibitor. Using fluorogenic substrate assays, we confirmed proteasome inhibition with Ki of 0.6 nM. In RPMI-8226 myeloma cells, bortezomib led to IκBα accumulation and decreased nuclear NF-κB p65. EMSA confirmed reduced NF-κB DNA-binding. In SCID mice bearing xenografts, bortezomib significantly inhibited tumor growth.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_014",
+    "test_type": "quality",
+    "agent": "Gefitinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Gefitinib showed promising activity in our preliminary screen of EGFR inhibitors. We treated PC9 cells with gefitinib and observed cell death by visual inspection. Western blot suggested reduced EGFR phosphorylation, though bands were difficult to quantify. A small pilot study of 8 patients showed tumor shrinkage in 3 patients.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_015",
+    "test_type": "quality",
+    "agent": "Olaparib",
+    "pathway": "DNA Damage Repair",
+    "abstract": "Olaparib is a PARP inhibitor approved for BRCA-mutant cancers. Biochemical assays showed PARP1/2 inhibition with IC50 of 5 nM and 1 nM. In BRCA1-mutant cells, olaparib increased γH2AX foci 10-fold. Xenograft studies showed 90% tumor regression in BRCA-deficient models. Phase III OlympiAD trial demonstrated significant PFS benefit.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_016",
+    "test_type": "relevance",
+    "agent": "Bevacizumab",
+    "pathway": "VEGF Signaling",
+    "abstract": "Bevacizumab is a humanized monoclonal antibody that binds and neutralizes VEGF-A. By sequestering VEGF-A, bevacizumab prevents ligand binding to VEGFR-1 and VEGFR-2 on endothelial cells. This blocks receptor dimerization and autophosphorylation, inhibiting downstream PLCγ-PKC and PI3K-AKT signaling required for endothelial cell survival.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_017",
+    "test_type": "relevance",
+    "agent": "Paclitaxel",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Paclitaxel is a taxane chemotherapy agent that stabilizes microtubules by binding β-tubulin. This prevents microtubule depolymerization required for mitotic spindle dynamics, leading to mitotic arrest at the metaphase-anaphase checkpoint. Prolonged mitotic arrest triggers intrinsic apoptosis through MCL-1 degradation and BAX activation.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_018",
+    "test_type": "relevance",
+    "agent": "Everolimus",
+    "pathway": "mTOR Signaling",
+    "abstract": "Everolimus is an mTOR inhibitor that forms a complex with FKBP12, which then binds to and inhibits mTORC1. This prevents mTORC1-mediated phosphorylation of S6K1 at Thr389 and 4E-BP1 at multiple sites. In renal cell carcinoma cells, everolimus treatment reduced phospho-S6K1 and phospho-4E-BP1 within 2 hours.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_019",
+    "test_type": "relevance",
+    "agent": "Cisplatin",
+    "pathway": "Notch Signaling",
+    "abstract": "Cisplatin is a platinum-based chemotherapy that forms DNA crosslinks, primarily intrastrand crosslinks between adjacent guanines. These lesions block DNA replication and transcription, activating the DNA damage response. Nucleotide excision repair and mismatch repair pathways attempt to resolve platinum-DNA adducts.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_020",
+    "test_type": "relevance",
+    "agent": "Fulvestrant",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Fulvestrant is a selective estrogen receptor degrader (SERD) that binds ER with high affinity and induces receptor degradation. Unlike tamoxifen, fulvestrant has no agonist activity in any tissue. Binding causes ER conformational change that prevents dimerization and promotes proteasomal degradation.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_021",
+    "test_type": "mechanism",
+    "agent": "Bevacizumab",
+    "pathway": "VEGF Signaling",
+    "abstract": "Bevacizumab is a humanized monoclonal antibody that binds and neutralizes VEGF-A. By sequestering VEGF-A in circulation, bevacizumab prevents ligand binding to VEGFR-1 and VEGFR-2 on endothelial cells. This blocks receptor dimerization and autophosphorylation, preventing downstream PLCγ, PI3K, and Src signaling.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_022",
+    "test_type": "mechanism",
+    "agent": "Bortezomib",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Bortezomib inhibits the 26S proteasome by binding to the chymotrypsin-like active site of the 20S core particle. This prevents degradation of IκBα, the endogenous inhibitor of NF-κB. Accumulated IκBα sequesters NF-κB p65/p50 heterodimers in the cytoplasm, preventing their nuclear translocation.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_023",
+    "test_type": "mechanism",
+    "agent": "Palbociclib",
+    "pathway": "Cell Cycle",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that prevents Rb phosphorylation. Hypophosphorylated Rb remains bound to E2F transcription factors, repressing transcription of S-phase genes. In ER-positive breast cancer cells, palbociclib blocked Rb phosphorylation at Ser780/795/807 within 4 hours.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_024",
+    "test_type": "mechanism",
+    "agent": "Alpelisib",
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Alpelisib is an α-specific PI3K inhibitor approved for PIK3CA-mutant breast cancer. By selectively inhibiting p110α, alpelisib prevents conversion of PIP2 to PIP3. Without PIP3, AKT cannot be recruited to the plasma membrane for activation by PDK1 and mTORC2.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_025",
+    "test_type": "mechanism",
+    "agent": "Ibrutinib",
+    "pathway": "B-cell Function",
+    "abstract": "Ibrutinib irreversibly inhibits BTK by covalently binding Cys481 in the active site. BTK is essential for B-cell receptor signaling. Ibrutinib blocks BCR-induced BTK autophosphorylation at Y223 and prevents downstream PLCγ2 phosphorylation, inhibiting calcium flux and NF-κB signaling.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_026",
+    "test_type": "quality",
+    "agent": "Erlotinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Erlotinib is an EGFR tyrosine kinase inhibitor. We performed kinase assays showing erlotinib inhibits EGFR with IC50 of 2 nM. In HCC827 cells, erlotinib blocked EGFR phosphorylation at Y1068. Cell viability decreased with IC50 of 10 nM. We validated findings in three additional EGFR-mutant cell lines.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_027",
+    "test_type": "quality",
+    "agent": "Pembrolizumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Pembrolizumab is an anti-PD-1 antibody that reverses T-cell exhaustion. Surface plasmon resonance confirmed high-affinity PD-1 binding (KD = 29 pM). In co-culture assays, pembrolizumab restored T-cell proliferation. In humanized mouse models, pembrolizumab reduced tumor burden by 70%. KEYNOTE trials demonstrated significant OS benefit.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_028",
+    "test_type": "quality",
+    "agent": "Vemurafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Vemurafenib is a BRAF V600E inhibitor. We performed cell viability assays in A375 melanoma cells showing IC50 of 100 nM. Western blots confirmed reduced phospho-ERK at 1 μM. The drug appeared to cause cell cycle arrest based on reduced cell counts. Similar effects were seen in two other BRAF-mutant cell lines.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_029",
+    "test_type": "quality",
+    "agent": "Trastuzumab",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Trastuzumab is a humanized anti-HER2 antibody. Binding studies showed high affinity for HER2 (KD = 5 nM). In SKBR3 cells, trastuzumab reduced surface HER2 by FACS and decreased phospho-HER2 by Western blot. In HER2+ xenografts, trastuzumab reduced tumor volume by 80%. Phase III trials demonstrated significant DFS and OS improvement.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_030",
+    "test_type": "quality",
+    "agent": "Everolimus",
+    "pathway": "mTOR Signaling",
+    "abstract": "Everolimus is an mTOR inhibitor. We reviewed published literature on mTOR signaling and its role in cancer. Based on theoretical considerations, everolimus should inhibit S6K1 and 4E-BP1 phosphorylation. Some clinical trials have been conducted but we did not perform any experiments.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_031",
+    "test_type": "relevance",
+    "agent": "Olaparib",
+    "pathway": "DNA Damage Repair",
+    "abstract": "Olaparib is a PARP1/2 inhibitor that traps PARP enzymes on DNA at sites of single-strand breaks. This prevents base excision repair completion and causes replication fork collapse during S-phase. In BRCA1/2-deficient cells lacking functional homologous recombination, trapped PARP-DNA complexes lead to accumulation of double-strand breaks.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_032",
+    "test_type": "relevance",
+    "agent": "Tamoxifen",
+    "pathway": "Wnt Signaling",
+    "abstract": "Tamoxifen is a selective estrogen receptor modulator used in ER-positive breast cancer treatment and prevention. The drug competes with estradiol for ER binding and acts as an antagonist in breast tissue while showing agonist activity in bone and uterus. The mechanism involves blocking ER-mediated transcription of proliferation genes.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_033",
+    "test_type": "relevance",
+    "agent": "Dabrafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Dabrafenib is a potent ATP-competitive inhibitor of BRAF V600E/K mutations. By occupying the ATP-binding site, dabrafenib prevents BRAF kinase activity and downstream MEK phosphorylation. In BRAF-mutant melanoma cells, dabrafenib treatment reduced phospho-MEK and phospho-ERK to undetectable levels within 1 hour.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_034",
+    "test_type": "relevance",
+    "agent": "Gemcitabine",
+    "pathway": "Hippo Signaling",
+    "abstract": "Gemcitabine is a nucleoside analog that incorporates into DNA during replication, causing chain termination. The drug also inhibits ribonucleotide reductase, depleting dNTP pools required for DNA synthesis. In pancreatic cancer cells, gemcitabine caused S-phase arrest due to blocked replication fork progression.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_035",
+    "test_type": "relevance",
+    "agent": "Rapamycin",
+    "pathway": "mTOR Signaling",
+    "abstract": "Rapamycin (sirolimus) is the prototypical mTOR inhibitor that forms a complex with FKBP12 to allosterically inhibit mTORC1. This blocks mTORC1-mediated phosphorylation of S6K1 and 4E-BP1, suppressing cap-dependent translation. In various cancer models, rapamycin reduced phospho-S6 and phospho-4E-BP1 levels.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_036",
+    "test_type": "mechanism",
+    "agent": "Cetuximab",
+    "pathway": "EGFR Signaling",
+    "abstract": "Cetuximab is a chimeric anti-EGFR monoclonal antibody that binds to domain III of the EGFR extracellular region, preventing ligand binding. This blocks EGF and TGF-α from activating the receptor, preventing EGFR dimerization and autophosphorylation. Downstream RAS-MAPK and PI3K-AKT signaling is suppressed.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_037",
+    "test_type": "mechanism",
+    "agent": "Sorafenib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR-2, PDGFR-β, and RAF kinases. In endothelial cells, sorafenib blocks VEGF-induced VEGFR-2 autophosphorylation at Y1175 and Y1214. This prevents recruitment of PLCγ and Src, blocking downstream ERK and AKT activation.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_038",
+    "test_type": "mechanism",
+    "agent": "Dabrafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Dabrafenib is a potent ATP-competitive inhibitor of BRAF V600E/K mutations. The drug binds the active kinase conformation and prevents catalytic activity. In melanoma cells harboring BRAF V600E, dabrafenib abolished BRAF-mediated MEK phosphorylation within 30 minutes, blocking ERK nuclear translocation.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_039",
+    "test_type": "mechanism",
+    "agent": "Everolimus",
+    "pathway": "mTOR Signaling",
+    "abstract": "Everolimus forms a complex with FKBP12 that allosterically inhibits mTORC1. This prevents mTORC1-mediated phosphorylation of S6K1 at Thr389 and 4E-BP1 at Thr37/46 and Ser65. Hypophosphorylated 4E-BP1 remains bound to eIF4E, blocking cap-dependent translation initiation.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_040",
+    "test_type": "mechanism",
+    "agent": "Olaparib",
+    "pathway": "DNA Damage Repair",
+    "abstract": "Olaparib is a PARP1/2 inhibitor that traps PARP enzymes on DNA at sites of single-strand breaks. This prevents completion of base excision repair and causes replication fork collapse during S-phase. In BRCA1/2-deficient cells, trapped PARP-DNA complexes lead to accumulation of lethal double-strand breaks.",
+    "expected_schema": {"mechanism_summary": "string", "molecular_components": "array", "direction_of_effect": "string"}
+  },
+  {
+    "id": "stab_041",
+    "test_type": "quality",
+    "agent": "Ibrutinib",
+    "pathway": "B-cell Function",
+    "abstract": "Ibrutinib is a BTK inhibitor for B-cell malignancies. Kinase assays showed irreversible BTK inhibition with IC50 of 0.5 nM. In CLL patient samples, ibrutinib blocked BCR-induced calcium flux and NF-κB activation. Migration assays demonstrated reduced chemotaxis. Clinical trials showed high response rates and prolonged PFS.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_042",
+    "test_type": "quality",
+    "agent": "Dabrafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Dabrafenib potently inhibits BRAF V600E with IC50 of 0.5 nM with >100-fold selectivity over wild-type. In melanoma cells, dabrafenib abolished phospho-MEK and phospho-ERK within 1 hour. In BRAF-mutant xenografts, dabrafenib caused tumor regression. Phase III trials demonstrated significant improvement in PFS and OS.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_043",
+    "test_type": "quality",
+    "agent": "Sunitinib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Sunitinib is a multi-kinase inhibitor. We performed endothelial cell tube formation assays showing inhibition at 100 nM. HUVEC proliferation was reduced in a dose-dependent manner. Phospho-VEGFR2 was decreased by Western blot. These results suggest anti-angiogenic activity consistent with VEGFR inhibition.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_044",
+    "test_type": "quality",
+    "agent": "Ruxolitinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ruxolitinib is a JAK1/2 inhibitor. Kinase assays confirmed IC50 of 3.3 nM and 2.8 nM for JAK1 and JAK2. In SET-2 cells, ruxolitinib blocked STAT5 phosphorylation. In patient samples, ruxolitinib reduced constitutive STAT phosphorylation. COMFORT trials demonstrated spleen volume reduction and symptom improvement.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_045",
+    "test_type": "quality",
+    "agent": "Curcumin",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Curcumin is a natural compound with reported NF-κB inhibitory activity. We purchased curcumin from a commercial supplier and treated HeLa cells. NF-κB luciferase reporter activity was reduced. Western blots showed decreased nuclear p65. However, curcumin has poor bioavailability and effects in vivo are uncertain.",
+    "expected_schema": {"evidence_quality": "string", "justification": "string"}
+  },
+  {
+    "id": "stab_046",
+    "test_type": "relevance",
+    "agent": "Abiraterone",
+    "pathway": "Androgen Signaling",
+    "abstract": "Abiraterone is a CYP17A1 inhibitor that blocks androgen biosynthesis at multiple tissue sites including testes, adrenals, and tumor. By inhibiting 17α-hydroxylase and 17,20-lyase activities, abiraterone prevents conversion of pregnenolone to DHEA and androstenedione to testosterone.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_047",
+    "test_type": "relevance",
+    "agent": "Vismodegib",
+    "pathway": "Hedgehog",
+    "abstract": "Vismodegib is a Smoothened (SMO) inhibitor approved for advanced basal cell carcinoma. By binding SMO, vismodegib prevents its activation and blocks Hedgehog pathway signaling. This keeps GLI transcription factors in their repressor forms and prevents transcription of Hedgehog target genes including GLI1.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_048",
+    "test_type": "relevance",
+    "agent": "Curcumin",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Curcumin, derived from turmeric, has been shown to inhibit NF-κB activation through multiple mechanisms. The compound prevents IκBα phosphorylation and degradation, blocking NF-κB nuclear translocation. In cancer cell lines, curcumin reduced nuclear p65 levels and NF-κB DNA-binding activity.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_049",
+    "test_type": "relevance",
+    "agent": "EGCG",
+    "pathway": "EGFR Signaling",
+    "abstract": "Epigallocatechin-3-gallate (EGCG), the major catechin in green tea, has been shown to inhibit EGFR activation. EGCG binds directly to EGFR and prevents EGF-induced receptor autophosphorylation. In lung and breast cancer cells, EGCG reduced phospho-EGFR and downstream phospho-ERK and phospho-AKT levels.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
+  },
+  {
+    "id": "stab_050",
+    "test_type": "relevance",
+    "agent": "Quercetin",
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Quercetin is a flavonoid with demonstrated PI3K inhibitory activity. The compound binds to the ATP-binding site of PI3K and prevents PIP3 generation. In cancer cell models, quercetin reduced phospho-AKT levels and downstream signaling through mTOR, FOXO, and GSK3β.",
+    "expected_schema": {"relevance": "string", "rationale": "string"}
   }
 ]

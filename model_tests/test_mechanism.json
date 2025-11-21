@@ -2,56 +2,351 @@
   {
     "id": "mech_001",
     "agent": "Osimertinib",
-    "pathway": "EGFR signaling",
-    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. Biochemical assays demonstrated that osimertinib treatment abolished phosphorylation of EGFR at Y1068 and Y1173, key autophosporylation sites. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC, leading to inhibition of both RAS/MAPK and PI3K/AKT signaling cascades. In EGFR-mutant non-small cell lung cancer cells, osimertinib treatment resulted in >90% reduction in phospho-ERK and phospho-AKT levels within 2 hours, accompanied by decreased expression of proliferation markers cyclin D1 and c-Myc.",
-    "gold_mechanism": {
-      "summary": "Osimertinib irreversibly inhibits mutant EGFR by covalently binding the ATP-binding site, preventing receptor autophosphorylation and blocking downstream RAS/MAPK and PI3K/AKT signaling",
-      "components": ["EGFR", "cysteine-797", "Y1068", "Y1173", "GRB2", "SHC", "RAS/MAPK", "PI3K/AKT", "ERK", "AKT", "cyclin D1", "c-Myc"],
-      "direction": "inhibition"
-    }
+    "pathway": "EGFR Signaling",
+    "abstract": "Osimertinib is a third-generation irreversible EGFR tyrosine kinase inhibitor designed to target both EGFR-activating mutations and the T790M resistance mutation. The drug covalently binds to cysteine-797 in the ATP-binding site of mutant EGFR, preventing receptor autophosphorylation. Biochemical assays demonstrated that osimertinib treatment abolished phosphorylation of EGFR at Y1068 and Y1173, key autophosphorylation sites. This blockade prevented recruitment and activation of downstream adaptor proteins including GRB2 and SHC, leading to inhibition of both RAS/MAPK and PI3K/AKT signaling cascades.",
+    "gold_label": "inhibition"
   },
   {
     "id": "mech_002",
     "agent": "Trametinib",
-    "pathway": "MAPK/ERK pathway",
-    "abstract": "Trametinib is a highly selective allosteric MEK1/2 inhibitor that binds to a pocket adjacent to but not overlapping with the ATP-binding site. Crystal structure analysis revealed that trametinib locks MEK1/2 in a catalytically inactive conformation by stabilizing an α-helix that blocks access of ATP and substrate ERK1/2 to the kinase domain. In BRAF-mutant melanoma cells, trametinib treatment prevented MEK1/2-mediated phosphorylation of ERK1/2 at Thr202/Tyr204, the dual phosphorylation required for ERK activation. Phospho-ERK levels decreased by >95% within 1 hour of trametinib treatment. Consequently, ERK-dependent transcription factors including ELK1 and c-FOS showed reduced phosphorylation and transcriptional activity, leading to decreased expression of proliferation-associated genes such as CCND1 and MYC. This resulted in G1 cell cycle arrest and reduced tumor cell proliferation.",
-    "gold_mechanism": {
-      "summary": "Trametinib allosterically inhibits MEK1/2 by stabilizing an inactive conformation, preventing ERK1/2 phosphorylation and downstream transcriptional activation of proliferation genes",
-      "components": ["MEK1", "MEK2", "ERK1", "ERK2", "Thr202", "Tyr204", "ELK1", "c-FOS", "CCND1", "MYC"],
-      "direction": "inhibition"
-    }
+    "pathway": "MAPK Signaling",
+    "abstract": "Trametinib is a highly selective allosteric MEK1/2 inhibitor that binds to a pocket adjacent to but not overlapping with the ATP-binding site. Crystal structure analysis revealed that trametinib locks MEK1/2 in a catalytically inactive conformation by stabilizing an α-helix that blocks access of ATP and substrate ERK1/2 to the kinase domain. In BRAF-mutant melanoma cells, trametinib treatment prevented MEK1/2-mediated phosphorylation of ERK1/2 at Thr202/Tyr204, causing >95% reduction in phospho-ERK levels within 1 hour.",
+    "gold_label": "inhibition"
   },
   {
     "id": "mech_003",
     "agent": "Idelalisib",
-    "pathway": "PI3K/AKT pathway",
-    "abstract": "Idelalisib is a first-in-class selective inhibitor of the delta isoform of phosphoinositide 3-kinase (PI3Kδ), which is predominantly expressed in hematopoietic cells. The drug competes with ATP for binding to the catalytic domain of PI3Kδ (p110δ subunit). Inhibition of PI3Kδ prevents phosphorylation of phosphatidylinositol-4,5-bisphosphate (PIP2) to generate phosphatidylinositol-3,4,5-trisphosphate (PIP3), the critical lipid second messenger that recruits AKT to the plasma membrane. In chronic lymphocytic leukemia (CLL) cells, idelalisib treatment reduced membrane PIP3 levels by 80% and decreased phosphorylation of AKT at both Thr308 (PDK1 site) and Ser473 (mTORC2 site). Reduced AKT activity led to decreased phosphorylation of downstream substrates including FOXO transcription factors, GSK3β, and MDM2. This resulted in cell cycle arrest, reduced survival signaling, and increased apoptosis in malignant B cells.",
-    "gold_mechanism": {
-      "summary": "Idelalisib selectively inhibits PI3Kδ, preventing PIP3 generation and AKT membrane recruitment/activation, leading to reduced phosphorylation of pro-survival downstream targets",
-      "components": ["PI3Kδ", "p110δ", "PIP2", "PIP3", "AKT", "Thr308", "Ser473", "PDK1", "mTORC2", "FOXO", "GSK3β", "MDM2"],
-      "direction": "inhibition"
-    }
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Idelalisib is a first-in-class selective inhibitor of the delta isoform of phosphoinositide 3-kinase (PI3Kδ). The drug competes with ATP for binding to the catalytic domain of PI3Kδ. Inhibition prevents phosphorylation of PIP2 to generate PIP3, the critical lipid second messenger that recruits AKT to the plasma membrane. In chronic lymphocytic leukemia cells, idelalisib treatment reduced membrane PIP3 levels by 80% and decreased phosphorylation of AKT at both Thr308 and Ser473.",
+    "gold_label": "inhibition"
   },
   {
     "id": "mech_004",
     "agent": "Ruxolitinib",
-    "pathway": "JAK-STAT pathway",
-    "abstract": "Ruxolitinib is a JAK1/JAK2 inhibitor approved for treatment of myeloproliferative neoplasms. The drug competitively binds to the ATP-binding pocket of JAK1 and JAK2 kinases, preventing their catalytic activity. In myelofibrosis patient samples harboring JAK2 V617F mutation, ruxolitinib treatment blocked constitutive JAK2 autophosphorylation at Y1007/Y1008 activation loop residues. This prevented JAK2-mediated phosphorylation of tyrosine residues on cytokine receptors such as erythropoietin receptor (EPOR) and thrombopoietin receptor (MPL). Consequently, STAT3 and STAT5 proteins could not dock to phospho-tyrosine residues via their SH2 domains, preventing their JAK-mediated phosphorylation at Y705 (STAT3) and Y694 (STAT5). Unphosphorylated STATs remained in the cytoplasm and could not dimerize, translocate to the nucleus, or activate transcription of target genes including MYC, BCL2, and PIM1. This led to reduced proliferation and increased apoptosis of JAK2-mutant cells.",
-    "gold_mechanism": {
-      "summary": "Ruxolitinib inhibits JAK1/2 kinase activity, preventing receptor and STAT phosphorylation, which blocks STAT dimerization, nuclear translocation, and transcriptional activation of proliferation/survival genes",
-      "components": ["JAK1", "JAK2", "Y1007", "Y1008", "EPOR", "MPL", "STAT3", "STAT5", "Y705", "Y694", "MYC", "BCL2", "PIM1"],
-      "direction": "inhibition"
-    }
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ruxolitinib is a JAK1/JAK2 inhibitor approved for treatment of myeloproliferative neoplasms. The drug competitively binds to the ATP-binding pocket of JAK1 and JAK2 kinases, preventing their catalytic activity. In myelofibrosis patient samples harboring JAK2 V617F mutation, ruxolitinib treatment blocked constitutive JAK2 autophosphorylation at Y1007/Y1008 activation loop residues. This prevented STAT3 and STAT5 phosphorylation, blocking their dimerization and nuclear translocation.",
+    "gold_label": "inhibition"
   },
   {
     "id": "mech_005",
     "agent": "Venetoclax",
-    "pathway": "BCL-2 apoptotic pathway",
-    "abstract": "Venetoclax is a selective BCL-2 inhibitor that induces apoptosis in BCL-2-dependent cancer cells. The drug is a BH3-mimetic that binds with high affinity to the BH3-binding groove of BCL-2 protein. Structural studies showed that venetoclax occupies the hydrophobic pocket normally bound by pro-apoptotic BH3-only proteins such as BIM, displacing them from BCL-2. This displacement liberates sequestered BIM, which then activates the pro-apoptotic effectors BAX and BAK. In chronic lymphocytic leukemia cells, venetoclax treatment caused rapid (within 4 hours) conformational activation of BAX and BAK, leading to their oligomerization and insertion into the mitochondrial outer membrane. BAX/BAK pores induced mitochondrial outer membrane permeabilization (MOMP), releasing cytochrome c into the cytosol. Cytochrome c triggered formation of the apoptosome complex with APAF-1 and procaspase-9, leading to caspase-9 activation. Active caspase-9 cleaved and activated executioner caspases-3 and -7, culminating in apoptotic cell death characterized by DNA fragmentation and phosphatidylserine externalization.",
-    "gold_mechanism": {
-      "summary": "Venetoclax binds BCL-2 and displaces BH3-only proteins like BIM, which activate BAX/BAK to induce mitochondrial permeabilization, cytochrome c release, and caspase-dependent apoptosis",
-      "components": ["BCL-2", "BIM", "BAX", "BAK", "mitochondrial outer membrane", "cytochrome c", "APAF-1", "caspase-9", "caspase-3", "caspase-7"],
-      "direction": "activation"
-    }
+    "pathway": "Apoptosis",
+    "abstract": "Venetoclax is a selective BCL-2 inhibitor that induces apoptosis in BCL-2-dependent cancer cells. The drug is a BH3-mimetic that binds with high affinity to the BH3-binding groove of BCL-2 protein. This displaces sequestered BIM, which then activates pro-apoptotic effectors BAX and BAK. BAX/BAK pores induced mitochondrial outer membrane permeabilization, releasing cytochrome c and triggering caspase cascade activation.",
+    "gold_label": "activation"
+  },
+  {
+    "id": "mech_006",
+    "agent": "Pembrolizumab",
+    "pathway": "T-cell Exhaustion",
+    "abstract": "Pembrolizumab is an anti-PD-1 monoclonal antibody that blocks the inhibitory checkpoint receptor. PD-1 engagement normally recruits SHP-2 phosphatase, which dephosphorylates TCR signaling components and induces T-cell exhaustion. By blocking PD-1/PD-L1 interaction, pembrolizumab prevents SHP-2 recruitment and restores ZAP70 and LAT phosphorylation. This reverses the exhausted phenotype and restores T-cell effector function including IFN-γ and granzyme B production.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_007",
+    "agent": "Ipilimumab",
+    "pathway": "T-cell Costimulation",
+    "abstract": "Ipilimumab is an anti-CTLA-4 antibody that blocks the inhibitory checkpoint receptor on T cells. CTLA-4 normally outcompetes CD28 for B7 ligand binding and delivers inhibitory signals. By blocking CTLA-4, ipilimumab allows CD28-mediated costimulation to proceed unimpeded. This activates PI3K and AKT signaling, enhances IL-2 production, and promotes T-cell proliferation and survival.",
+    "gold_label": "activation"
+  },
+  {
+    "id": "mech_008",
+    "agent": "Bevacizumab",
+    "pathway": "VEGF Signaling",
+    "abstract": "Bevacizumab is a humanized monoclonal antibody that binds and neutralizes VEGF-A. By sequestering VEGF-A in circulation, bevacizumab prevents ligand binding to VEGFR-1 and VEGFR-2 on endothelial cells. This blocks receptor dimerization and autophosphorylation, preventing downstream PLCγ, PI3K, and Src signaling required for endothelial cell survival, proliferation, and migration. Tumor microvessel density decreased by 70% following treatment.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_009",
+    "agent": "Cetuximab",
+    "pathway": "EGFR Signaling",
+    "abstract": "Cetuximab is a chimeric anti-EGFR monoclonal antibody that binds to domain III of the EGFR extracellular region, preventing ligand binding. This blocks EGF and TGF-α from activating the receptor, preventing EGFR dimerization and autophosphorylation. Downstream RAS-MAPK and PI3K-AKT signaling is suppressed. In colorectal cancer cells, cetuximab reduced phospho-ERK and phospho-AKT by >80% within 4 hours.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_010",
+    "agent": "Trastuzumab",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Trastuzumab is a humanized anti-HER2 antibody that binds domain IV of the HER2 extracellular region. This prevents HER2 homodimerization and heterodimerization with other ERBB family members. The antibody also induces receptor internalization and degradation. In HER2-amplified breast cancer, trastuzumab reduced surface HER2 levels by 50% and decreased phospho-HER2, phospho-AKT, and phospho-ERK signaling.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_011",
+    "agent": "Bortezomib",
+    "pathway": "NF-kB Signaling",
+    "abstract": "Bortezomib inhibits the 26S proteasome by binding to the chymotrypsin-like active site of the 20S core particle. This prevents degradation of IκBα, the endogenous inhibitor of NF-κB. Accumulated IκBα sequesters NF-κB p65/p50 heterodimers in the cytoplasm, preventing their nuclear translocation. EMSA and luciferase reporter assays confirmed >85% reduction in NF-κB DNA-binding and transcriptional activity following bortezomib treatment.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_012",
+    "agent": "Everolimus",
+    "pathway": "mTOR Signaling",
+    "abstract": "Everolimus forms a complex with FKBP12 that allosterically inhibits mTORC1. This prevents mTORC1-mediated phosphorylation of S6K1 at Thr389 and 4E-BP1 at Thr37/46 and Ser65. Hypophosphorylated 4E-BP1 remains bound to eIF4E, blocking cap-dependent translation initiation. In renal cell carcinoma cells, everolimus reduced protein synthesis rates by 60% and decreased HIF-1α and VEGF expression.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_013",
+    "agent": "Palbociclib",
+    "pathway": "Cell Cycle",
+    "abstract": "Palbociclib is a selective CDK4/6 inhibitor that prevents Rb phosphorylation. Hypophosphorylated Rb remains bound to E2F transcription factors, repressing transcription of S-phase genes. In ER-positive breast cancer cells, palbociclib blocked Rb phosphorylation at Ser780/795/807 within 4 hours and reduced E2F target gene expression (CCNE1, CDC6, MCM2-7). Cell cycle analysis showed 90% G1 arrest at 24 hours.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_014",
+    "agent": "Olaparib",
+    "pathway": "DNA Damage Repair",
+    "abstract": "Olaparib is a PARP1/2 inhibitor that traps PARP enzymes on DNA at sites of single-strand breaks. This prevents completion of base excision repair and causes replication fork collapse during S-phase. In BRCA1/2-deficient cells, trapped PARP-DNA complexes lead to accumulation of double-strand breaks. γH2AX foci increased 10-fold and RAD51 foci were absent, indicating failed homologous recombination repair.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_015",
+    "agent": "Ibrutinib",
+    "pathway": "B-cell Function",
+    "abstract": "Ibrutinib irreversibly inhibits BTK by covalently binding Cys481 in the active site. BTK is essential for B-cell receptor signaling. Ibrutinib blocks BCR-induced BTK autophosphorylation at Y223 and prevents downstream PLCγ2 phosphorylation. This inhibits IP3-mediated calcium flux, DAG-mediated PKC activation, and NF-κB signaling. CLL cells showed reduced proliferation, chemokine secretion, and tissue homing following treatment.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_016",
+    "agent": "Dabrafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Dabrafenib is a potent ATP-competitive inhibitor of BRAF V600E/K mutations. The drug binds the active kinase conformation and prevents catalytic activity. In melanoma cells harboring BRAF V600E, dabrafenib abolished BRAF-mediated MEK phosphorylation within 30 minutes. Downstream phospho-ERK decreased to undetectable levels, blocking ERK nuclear translocation and transcription of immediate-early genes including FOS and EGR1.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_017",
+    "agent": "Cobimetinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Cobimetinib is a highly selective allosteric MEK1/2 inhibitor that binds to a hydrophobic pocket adjacent to the ATP-binding site. This locks MEK in an inactive conformation unable to phosphorylate ERK1/2. In BRAF-mutant melanoma, cobimetinib caused sustained suppression of phospho-ERK for >24 hours. Combined with BRAF inhibitor dabrafenib, cobimetinib prevented paradoxical MAPK activation and delayed resistance emergence.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_018",
+    "agent": "Alpelisib",
+    "pathway": "PI3K-Akt Signaling",
+    "abstract": "Alpelisib is an α-specific PI3K inhibitor approved for PIK3CA-mutant breast cancer. By selectively inhibiting p110α, alpelisib prevents conversion of PIP2 to PIP3. Without PIP3, AKT cannot be recruited to the plasma membrane for activation by PDK1 and mTORC2. In PIK3CA-mutant cells, alpelisib reduced phospho-AKT(S473) and phospho-AKT(T308) by >90%, leading to FOXO nuclear translocation and transcription of pro-apoptotic genes.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_019",
+    "agent": "Sorafenib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Sorafenib is a multi-kinase inhibitor with activity against VEGFR-2, PDGFR-β, and RAF kinases. In endothelial cells, sorafenib blocks VEGF-induced VEGFR-2 autophosphorylation at Y1175 and Y1214. This prevents recruitment of PLCγ and Src, blocking downstream ERK and AKT activation required for endothelial survival and proliferation. Tube formation was reduced by 85% and microvessel density decreased in tumor xenografts.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_020",
+    "agent": "Sunitinib",
+    "pathway": "PDGF Signaling",
+    "abstract": "Sunitinib inhibits multiple receptor tyrosine kinases including PDGFR-α and PDGFR-β. In pericytes and smooth muscle cells, sunitinib blocks PDGF-BB-induced receptor autophosphorylation. This prevents recruitment of PI3K, PLCγ, and RasGAP to phosphorylated receptor tyrosines. Downstream signaling through AKT and ERK was reduced by >80%, impairing pericyte recruitment to tumor vessels and destabilizing tumor vasculature.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_021",
+    "agent": "Crizotinib",
+    "pathway": "MET Signaling",
+    "abstract": "Crizotinib inhibits MET receptor tyrosine kinase by competing for ATP binding. In MET-amplified gastric cancer cells, crizotinib blocked HGF-induced MET autophosphorylation at Y1234/1235. This prevented GAB1 docking and subsequent PI3K and ERK activation. Downstream signaling through AKT, STAT3, and ERK was suppressed by >85%, reducing cell proliferation, survival, and invasion in vitro and in vivo.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_022",
+    "agent": "Alectinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Alectinib is a highly selective ALK inhibitor designed to overcome crizotinib resistance. In ALK-rearranged lung cancer, alectinib blocks ALK autophosphorylation and prevents activation of downstream effectors including STAT3, AKT, and ERK. The MAPK pathway was potently suppressed with >95% reduction in phospho-ERK. Alectinib also penetrates the blood-brain barrier, providing activity against CNS metastases.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_023",
+    "agent": "Lorlatinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Lorlatinib is a third-generation ALK/ROS1 inhibitor with activity against resistance mutations. ALK signaling activates STAT3 through both JAK-dependent and JAK-independent mechanisms. Lorlatinib blocks ALK-mediated STAT3 phosphorylation at Y705 by preventing upstream kinase activity. This reduces STAT3 DNA binding and transcription of target genes including MYC, BCL-XL, and SOCS3. Cell survival signaling was significantly impaired.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_024",
+    "agent": "Erlotinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Erlotinib is a first-generation reversible EGFR TKI that competes with ATP for binding to the EGFR kinase domain. In EGFR-mutant lung cancer cells, erlotinib blocked receptor autophosphorylation at multiple tyrosine residues including Y1068 and Y1173. This prevented recruitment of GRB2, SOS, and GAB1, suppressing both RAS-MAPK and PI3K-AKT signaling cascades. BIM was upregulated and apoptosis induced within 24 hours.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_025",
+    "agent": "Gefitinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Gefitinib reversibly inhibits EGFR tyrosine kinase activity by competing for ATP binding. The drug is most effective against EGFR exon 19 deletions and L858R mutations. In PC9 cells, gefitinib abolished EGFR phosphorylation and downstream signaling through ERK and AKT within 2 hours. This led to upregulation of pro-apoptotic BIM, downregulation of anti-apoptotic MCL-1, and caspase-dependent cell death.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_026",
+    "agent": "Lapatinib",
+    "pathway": "ERBB2 Signaling",
+    "abstract": "Lapatinib is a dual EGFR/HER2 TKI that reversibly binds both kinase domains. In HER2-amplified breast cancer, lapatinib blocks HER2 autophosphorylation and prevents HER2/HER3 heterodimer signaling. This disrupts PI3K recruitment through HER3 and reduces AKT phosphorylation. FOXO3a is released from AKT-mediated inhibition and translocates to the nucleus to induce BIM expression and apoptosis.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_027",
+    "agent": "Afatinib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Afatinib is an irreversible pan-ERBB inhibitor that covalently binds conserved cysteine residues in EGFR, HER2, and HER4. Unlike reversible inhibitors, afatinib provides sustained target inhibition. In EGFR-mutant lung cancer, afatinib caused complete suppression of EGFR phosphorylation for >24 hours. Downstream RAS-MAPK and PI3K-AKT signaling remained suppressed, preventing adaptive resistance mechanisms observed with reversible inhibitors.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_028",
+    "agent": "Ponatinib",
+    "pathway": "JAK-STAT Signaling",
+    "abstract": "Ponatinib is a multi-kinase inhibitor designed to overcome BCR-ABL T315I resistance. BCR-ABL activates JAK-STAT signaling in CML cells. Ponatinib blocks BCR-ABL kinase activity and subsequently prevents JAK2 and STAT5 phosphorylation. In T315I-mutant CML cells, ponatinib reduced phospho-STAT5 by >90% and decreased expression of STAT5 target genes including BCL-XL, PIM1, and CCND2.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_029",
+    "agent": "Dasatinib",
+    "pathway": "Cell Adhesion & Motility",
+    "abstract": "Dasatinib is a multi-kinase inhibitor with potent activity against SRC family kinases. SRC regulates cell adhesion and motility through phosphorylation of focal adhesion components. Dasatinib blocks SRC-mediated phosphorylation of FAK, paxillin, and p130CAS. This disrupts focal adhesion turnover and inhibits lamellipodia formation. Cancer cell migration and invasion were reduced by >70% in transwell assays.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_030",
+    "agent": "Bosutinib",
+    "pathway": "Cell Adhesion & Motility",
+    "abstract": "Bosutinib is a dual SRC/ABL kinase inhibitor. SRC promotes cell motility through phosphorylation of cortactin and WASP family proteins that regulate actin dynamics. Bosutinib blocked SRC-mediated cortactin phosphorylation at Y421 and prevented actin polymerization at the leading edge. This inhibited formation of invadopodia structures required for matrix degradation and cancer cell invasion through basement membrane.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_031",
+    "agent": "Vemurafenib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Vemurafenib is a selective BRAF V600E inhibitor that binds the active kinase conformation. In BRAF-mutant melanoma, vemurafenib prevents BRAF-mediated MEK phosphorylation. Phospho-MEK and phospho-ERK decreased to undetectable levels within 1 hour. Downstream transcription factors ELK1 and c-FOS showed reduced activity, and expression of cyclin D1 and c-MYC decreased, causing G1 cell cycle arrest.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_032",
+    "agent": "Regorafenib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Regorafenib is a multi-kinase inhibitor targeting VEGFR1-3, TIE2, PDGFR, and RAF. In endothelial cells, regorafenib blocks VEGF-induced VEGFR2 phosphorylation and prevents downstream signaling through ERK and AKT. This inhibits endothelial cell proliferation, migration, and tube formation. In colorectal cancer xenografts, regorafenib reduced microvessel density by 60% and increased tumor hypoxia.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_033",
+    "agent": "Lenvatinib",
+    "pathway": "FGFR Signaling",
+    "abstract": "Lenvatinib is a multi-kinase inhibitor with activity against VEGFR1-3, FGFR1-4, PDGFR, RET, and KIT. In FGFR-driven tumors, lenvatinib blocks FGF-induced receptor autophosphorylation and prevents FRS2 adaptor protein phosphorylation. This inhibits downstream RAS-MAPK and PI3K-AKT signaling. Phospho-ERK and phospho-AKT decreased by >80%, reducing FGFR-dependent proliferation and survival.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_034",
+    "agent": "Nintedanib",
+    "pathway": "PDGF Signaling",
+    "abstract": "Nintedanib is a triple angiokinase inhibitor targeting VEGFR, PDGFR, and FGFR. In lung fibroblasts, nintedanib blocks PDGF-BB-induced receptor autophosphorylation. This prevents PI3K activation and downstream AKT phosphorylation. The drug inhibits fibroblast proliferation, migration, and transformation to myofibroblasts. In idiopathic pulmonary fibrosis, nintedanib reduced fibrotic progression by targeting PDGFR-mediated fibroblast activation.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_035",
+    "agent": "Cabozantinib",
+    "pathway": "MET Signaling",
+    "abstract": "Cabozantinib is a multi-kinase inhibitor targeting MET, VEGFR2, and AXL. In MET-amplified tumors, cabozantinib blocks HGF-induced MET activation and prevents downstream GAB1 phosphorylation. This inhibits PI3K-AKT and RAS-MAPK signaling branches. MET-driven cell scattering and invasion were reduced by >90%. Cabozantinib also inhibits AXL-mediated EMT and drug resistance mechanisms.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_036",
+    "agent": "Axitinib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Axitinib is a potent and selective VEGFR1-3 inhibitor approved for renal cell carcinoma. In endothelial cells, axitinib blocks VEGF-induced receptor autophosphorylation with IC50 values in the picomolar range. This prevents PLCγ and PI3K recruitment, blocking calcium signaling and AKT activation. Endothelial tube formation was inhibited at concentrations 100-fold lower than required for other kinase targets.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_037",
+    "agent": "Pazopanib",
+    "pathway": "VEGF Signaling",
+    "abstract": "Pazopanib is a multi-targeted TKI inhibiting VEGFR1-3, PDGFR-α/β, and c-KIT. In tumor endothelium, pazopanib blocks constitutive and ligand-induced VEGFR2 phosphorylation. Downstream signaling through ERK, AKT, and eNOS was suppressed. Tumor blood flow measured by DCE-MRI decreased by 50% within 48 hours. This rapid anti-angiogenic effect preceded tumor shrinkage in renal cell carcinoma patients.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_038",
+    "agent": "Vandetanib",
+    "pathway": "EGFR Signaling",
+    "abstract": "Vandetanib is a multi-kinase inhibitor targeting VEGFR, EGFR, and RET. In EGFR-expressing tumors, vandetanib blocks EGF-induced receptor autophosphorylation and prevents downstream MAPK and AKT signaling. Phospho-EGFR, phospho-ERK, and phospho-AKT decreased by >75% following treatment. The dual VEGFR/EGFR inhibition provides both anti-angiogenic and direct anti-tumor effects in solid tumors.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_039",
+    "agent": "Ceritinib",
+    "pathway": "MAPK Signaling",
+    "abstract": "Ceritinib is a second-generation ALK inhibitor with activity against several crizotinib-resistant mutations. In ALK-rearranged lung cancer, ceritinib blocks ALK autophosphorylation and prevents activation of downstream effectors. The MAPK pathway showed >90% reduction in phospho-MEK and phospho-ERK. Ceritinib also inhibits IGF-1R, providing additional suppression of survival signaling in ALK-positive tumors.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_040",
+    "agent": "Abiraterone",
+    "pathway": "Androgen Signaling",
+    "abstract": "Abiraterone is a CYP17A1 inhibitor that blocks androgen biosynthesis. By inhibiting 17α-hydroxylase and 17,20-lyase activities, abiraterone prevents conversion of pregnenolone to DHEA and androstenedione to testosterone. Intratumoral androgen levels decreased by >90% in castration-resistant prostate cancer. This reduced AR transcriptional activity and expression of AR target genes including KLK3, TMPRSS2, and FKBP5.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_041",
+    "agent": "Enzalutamide",
+    "pathway": "Androgen Signaling",
+    "abstract": "Enzalutamide is a second-generation androgen receptor antagonist. Unlike bicalutamide, enzalutamide prevents AR nuclear translocation even in the setting of AR overexpression. The drug blocks AR DNA binding and coactivator recruitment. ChIP-seq showed complete loss of AR binding to enhancer regions. PSA and other AR target genes were suppressed by >95% in castration-resistant prostate cancer models.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_042",
+    "agent": "Fulvestrant",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Fulvestrant is a selective estrogen receptor degrader that induces ER proteasomal degradation. Binding causes ER conformational change that prevents dimerization and promotes ubiquitination. Nuclear ER levels decreased by >95% within 24 hours. This abolished ER-mediated transcription of proliferation genes including CCND1, MYC, and TFF1. Unlike tamoxifen, fulvestrant has no agonist activity in any tissue.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_043",
+    "agent": "Tamoxifen",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Tamoxifen is a selective estrogen receptor modulator that acts as an ER antagonist in breast tissue. The drug competes with estradiol for ER binding and recruits corepressors instead of coactivators. In ER-positive breast cancer, tamoxifen blocked ER-mediated transcription of cyclin D1 and c-MYC, causing G1 arrest. However, tamoxifen shows ER agonist activity in bone and uterus through tissue-specific coregulator recruitment.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_044",
+    "agent": "Anastrozole",
+    "pathway": "Estrogen Signaling",
+    "abstract": "Anastrozole is a non-steroidal aromatase inhibitor that blocks conversion of androgens to estrogens. By inhibiting CYP19A1, anastrozole reduces circulating estradiol to undetectable levels in postmenopausal women. This decreases ER activation and ER-mediated transcription in ER-positive tumors. Clinical response correlated with >95% suppression of plasma estradiol and reduced tumor ER transcriptional activity.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_045",
+    "agent": "Rapamycin",
+    "pathway": "Autophagy",
+    "abstract": "Rapamycin inhibits mTORC1, which normally suppresses autophagy through ULK1 phosphorylation at Ser757. By blocking mTORC1, rapamycin relieves ULK1 inhibition and allows AMPK-mediated activating phosphorylation at Ser317/777. This initiates autophagosome formation through Beclin-1/VPS34 complex activation. LC3-II levels increased 5-fold and autophagic flux was enhanced as measured by p62 degradation and LC3-GFP puncta formation.",
+    "gold_label": "activation"
+  },
+  {
+    "id": "mech_046",
+    "agent": "Vorinostat",
+    "pathway": "Epigenetic & Transcriptional Regulation",
+    "abstract": "Vorinostat is a pan-HDAC inhibitor that blocks class I and II histone deacetylases. By preventing histone deacetylation, vorinostat increases acetylated histone H3 and H4 levels, promoting open chromatin structure. This activates transcription of tumor suppressors including p21, p27, and BAX. Non-histone proteins including p53, HSP90, and tubulin also showed increased acetylation, affecting their function.",
+    "gold_label": "activation"
+  },
+  {
+    "id": "mech_047",
+    "agent": "Selinexor",
+    "pathway": "Apoptosis",
+    "abstract": "Selinexor is a selective inhibitor of nuclear export (SINE) compound that blocks XPO1/CRM1. This prevents nuclear export of tumor suppressor proteins including p53, p21, IκB, and FOXO. Nuclear retention of p53 activates transcription of pro-apoptotic genes BAX, PUMA, and NOXA. In multiple myeloma cells, selinexor caused caspase-3 activation and apoptosis through restored tumor suppressor function.",
+    "gold_label": "activation"
+  },
+  {
+    "id": "mech_048",
+    "agent": "Vismodegib",
+    "pathway": "Hedgehog",
+    "abstract": "Vismodegib is a Smoothened (SMO) antagonist that blocks Hedgehog pathway activation. By binding SMO, vismodegib prevents its activation and blocks signal transduction to GLI transcription factors. GLI proteins remain in their repressor forms, preventing transcription of Hedgehog target genes including GLI1, PTCH1, and CCND1. In basal cell carcinoma, vismodegib reduced GLI1 expression by >95% and caused tumor regression.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_049",
+    "agent": "Curcumin",
+    "pathway": "Inflammation",
+    "abstract": "Curcumin inhibits NF-κB-mediated inflammatory signaling through multiple mechanisms. The compound prevents IKK activation and IκBα phosphorylation, blocking NF-κB nuclear translocation. Curcumin also inhibits COX-2 and iNOS enzyme activities directly. In macrophages, curcumin reduced LPS-induced TNF-α, IL-1β, and IL-6 production by >70%. This broad anti-inflammatory activity underlies curcumin's therapeutic potential.",
+    "gold_label": "inhibition"
+  },
+  {
+    "id": "mech_050",
+    "agent": "Resveratrol",
+    "pathway": "Senescence",
+    "abstract": "Resveratrol activates SIRT1 deacetylase, which deacetylates p53 at Lys382 and reduces its transcriptional activity. This suppresses p53-mediated senescence induction. SIRT1 also deacetylates FOXO transcription factors, promoting expression of antioxidant genes that reduce oxidative stress-induced senescence. In fibroblasts, resveratrol extended replicative lifespan by 30% and reduced senescence-associated β-galactosidase activity by 50%.",
+    "gold_label": "inhibition"
   }
 ]
